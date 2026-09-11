@@ -134,7 +134,13 @@ export const App: React.FC = () => {
             
             {/* Corporate & Contact */}
             <Route path="/about" element={<AboutPage onOpenQuoteModal={() => handleOpenQuoteModal()} />} />
-            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/about/" element={<AboutPage onOpenQuoteModal={() => handleOpenQuoteModal()} />} />
+            <Route path="/about-us" element={<AboutPage onOpenQuoteModal={() => handleOpenQuoteModal()} />} />
+            <Route path="/about-us/" element={<AboutPage onOpenQuoteModal={() => handleOpenQuoteModal()} />} />
+            <Route path="/contact" element={<ContactPage onOpenQuoteModal={() => handleOpenQuoteModal()} />} />
+            <Route path="/contact/" element={<ContactPage onOpenQuoteModal={() => handleOpenQuoteModal()} />} />
+            <Route path="/contact-us" element={<ContactPage onOpenQuoteModal={() => handleOpenQuoteModal()} />} />
+            <Route path="/contact-us/" element={<ContactPage onOpenQuoteModal={() => handleOpenQuoteModal()} />} />
 
             {/* Fallback to Home */}
             <Route path="*" element={<HomePage onOpenQuoteModal={handleOpenQuoteModal} />} />
