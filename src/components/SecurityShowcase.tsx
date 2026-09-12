@@ -58,7 +58,7 @@ export const SecurityShowcase: React.FC = () => {
       {showcaseItems.map((item, idx) => (
         <div
           key={idx}
-          className="group relative rounded-xl overflow-hidden bg-[#1F1A14] border border-[#C59B27]/25 hover:border-[#DFB845] transition-all duration-300 shadow-xl"
+          className="group relative rounded-xl overflow-hidden bg-[#0F261D] border border-[#D4AF37]/25 hover:border-[#E5C365] transition-all duration-300 shadow-xl"
         >
           {/* Image Container */}
           <div className="relative h-48 overflow-hidden">
@@ -68,18 +68,18 @@ export const SecurityShowcase: React.FC = () => {
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#15120E] via-[#15120E]/40 to-transparent"></div>
-            <span className="absolute top-3 left-3 bg-[#C59B27] text-black font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded shadow">
+            <div className="absolute inset-0 bg-gradient-to-t from-[#091610] via-[#091610]/40 to-transparent"></div>
+            <span className="absolute top-3 left-3 bg-[#D4AF37] text-[#091610] font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded shadow">
               {item.badge}
             </span>
           </div>
 
           {/* Card Body */}
           <div className="p-4 space-y-2">
-            <h4 className="font-serif text-sm font-bold text-[#FAF7F2] group-hover:text-[#DFB845] transition-colors line-clamp-1">
+            <h4 className="font-serif text-sm font-bold text-[#FAF7F2] group-hover:text-[#E5C365] transition-colors line-clamp-1">
               {item.title}
             </h4>
-            <p className="text-xs text-[#A39B8F] leading-relaxed line-clamp-2">
+            <p className="text-xs text-[#9CB6A8] leading-relaxed line-clamp-2">
               {item.subtitle}
             </p>
           </div>

@@ -18,8 +18,8 @@ export const FAQAccordion: React.FC = () => {
             key={idx}
             className={`border rounded-xl transition-all duration-200 overflow-hidden ${
               isOpen
-                ? 'bg-[#1F1A14] border-[#C59B27]/50 shadow-gold-glow'
-                : 'bg-[#1A1612] border-[#C59B27]/20 hover:border-[#C59B27]/40'
+                ? 'bg-[#0F261D] border-[#D4AF37]/50 shadow-gold-glow'
+                : 'bg-[#091610] border-[#D4AF37]/20 hover:border-[#D4AF37]/40'
             }`}
           >
             <button
@@ -28,7 +28,7 @@ export const FAQAccordion: React.FC = () => {
               aria-expanded={isOpen}
             >
               <div className="flex items-center gap-3">
-                <span className="w-6 h-6 rounded-full bg-[#C59B27]/20 text-[#DFB845] text-xs font-bold flex items-center justify-center shrink-0">
+                <span className="w-6 h-6 rounded-full bg-[#D4AF37]/20 text-[#E5C365] text-xs font-bold flex items-center justify-center shrink-0">
                   Q{idx + 1}
                 </span>
                 <span className="font-serif text-sm sm:text-base font-bold text-[#FAF7F2]">
@@ -36,14 +36,14 @@ export const FAQAccordion: React.FC = () => {
                 </span>
               </div>
               <ChevronDown
-                className={`w-5 h-5 text-[#C59B27] shrink-0 transition-transform duration-300 ${
-                  isOpen ? 'rotate-180 text-[#DFB845]' : ''
+                className={`w-5 h-5 text-[#D4AF37] shrink-0 transition-transform duration-300 ${
+                  isOpen ? 'rotate-180 text-[#E5C365]' : ''
                 }`}
               />
             </button>
 
             {isOpen && (
-              <div className="px-5 sm:px-6 pb-5 pt-1 text-xs sm:text-sm text-[#A39B8F] leading-relaxed border-t border-[#C59B27]/15">
+              <div className="px-5 sm:px-6 pb-5 pt-1 text-xs sm:text-sm text-[#9CB6A8] leading-relaxed border-t border-[#D4AF37]/15">
                 <p>{item.answer}</p>
               </div>
             )}

@@ -20,7 +20,7 @@ export const FloatingWhatsApp: React.FC = () => {
         </span>
       </a>
       {/* Floating Tooltip */}
-      <div className="absolute bottom-full right-0 mb-2 hidden group-hover:block whitespace-nowrap bg-[#1F1A14] text-[#FAF7F2] text-xs px-3 py-1.5 rounded-lg border border-[#C59B27]/30 shadow-lg">
+      <div className="absolute bottom-full right-0 mb-2 hidden group-hover:block whitespace-nowrap bg-[#0F261D] text-[#FAF7F2] text-xs px-3 py-1.5 rounded-lg border border-[#D4AF37]/30 shadow-lg">
         ⚡ WhatsApp: +256 754 681378 (Lubowa, Kampala)
       </div>
     </div>

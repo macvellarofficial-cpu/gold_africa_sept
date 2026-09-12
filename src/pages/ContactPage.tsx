@@ -186,8 +186,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
                 />
               </form>
             ) : (
-              <div style={{ padding: '28px', background: '#1A140A', border: '1.5px solid #C59B27', borderRadius: '12px', color: '#FAF7F2' }}>
-                <h3 style={{ margin: '0 0 8px', fontSize: '1.25rem', fontWeight: 700, color: '#DFB845' }}>
+              <div style={{ padding: '28px', background: '#0B1B14', border: '1.5px solid #D4AF37', borderRadius: '12px', color: '#FAF7F2' }}>
+                <h3 style={{ margin: '0 0 8px', fontSize: '1.25rem', fontWeight: 700, color: '#E5C365' }}>
                   ✓ Enquiry Successfully Transmitted to Trading Desk
                 </h3>
                 <p style={{ margin: '0 0 16px', fontSize: '.92rem', lineHeight: 1.6, color: '#EDE8E1' }}>
@@ -205,7 +205,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
                   <button
                     type="button"
                     onClick={() => setSubmitted(false)}
-                    style={{ background: 'transparent', border: '1px solid #C59B27', color: '#DFB845', padding: '10px 16px', borderRadius: '6px', cursor: 'pointer', fontSize: '.85rem', fontWeight: 600 }}
+                    style={{ background: 'transparent', border: '1px solid #D4AF37', color: '#E5C365', padding: '10px 16px', borderRadius: '6px', cursor: 'pointer', fontSize: '.85rem', fontWeight: 600 }}
                   >
                     Send Another Inquiry
                   </button>

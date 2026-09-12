@@ -98,11 +98,11 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
-      <div className="relative w-full max-w-3xl bg-[#1A1612] border border-[#C59B27]/40 rounded-2xl shadow-2xl overflow-hidden my-8">
+      <div className="relative w-full max-w-3xl bg-[#0B1B14] border border-[#D4AF37]/40 rounded-2xl shadow-2xl overflow-hidden my-8">
         {/* Modal Header */}
-        <div className="bg-gradient-to-r from-[#29221B] via-[#1F1A14] to-[#15120E] border-b border-[#C59B27]/25 px-6 py-4 flex items-center justify-between">
+        <div className="bg-gradient-to-r from-[#0E281D] via-[#0A1D15] to-[#06100B] border-b border-[#D4AF37]/25 px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-[#C59B27]/20 border border-[#C59B27]/40 flex items-center justify-center text-[#DFB845]">
+            <div className="w-9 h-9 rounded-lg bg-[#D4AF37]/20 border border-[#D4AF37]/40 flex items-center justify-center text-[#E5C365]">
               <Calculator className="w-5 h-5" />
             </div>
             <div>
@@ -129,13 +129,13 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
               {/* Product & Quantity Selector Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-semibold text-[#DFB845] uppercase tracking-wider mb-1.5">
+                  <label className="block text-xs font-semibold text-[#E5C365] uppercase tracking-wider mb-1.5">
                     Select Gold Product
                   </label>
                   <select
                     value={selectedProduct}
                     onChange={(e) => setSelectedProduct(e.target.value)}
-                    className="w-full px-3.5 py-2.5 bg-[#25201A] border border-[#C59B27]/30 rounded-lg text-sm text-[#EDE8E1] focus:outline-none focus:border-[#DFB845] transition-colors"
+                    className="w-full px-3.5 py-2.5 bg-[#0F261D] border border-[#D4AF37]/35 rounded-lg text-sm text-[#EDE8E1] focus:outline-none focus:border-[#E5C365] transition-colors"
                   >
                     {PRODUCTS.map((prod) => (
                       <option key={prod.slug} value={prod.slug}>
@@ -146,7 +146,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#DFB845] uppercase tracking-wider mb-1.5">
+                  <label className="block text-xs font-semibold text-[#E5C365] uppercase tracking-wider mb-1.5">
                     Order Allocation (Kilograms)
                   </label>
                   <div className="flex items-center gap-2">
@@ -157,7 +157,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                       max="500"
                       value={quantityKg}
                       onChange={(e) => setQuantityKg(parseFloat(e.target.value) || 1)}
-                      className="w-full px-3.5 py-2.5 bg-[#25201A] border border-[#C59B27]/30 rounded-lg text-sm font-mono text-[#EDE8E1] focus:outline-none focus:border-[#DFB845]"
+                      className="w-full px-3.5 py-2.5 bg-[#0F261D] border border-[#D4AF37]/35 rounded-lg text-sm font-mono text-[#EDE8E1] focus:outline-none focus:border-[#E5C365]"
                       required
                     />
                     <div className="flex gap-1">
@@ -168,8 +168,8 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                           onClick={() => setQuantityKg(val)}
                           className={`px-2.5 py-2 rounded text-xs font-medium border transition-colors ${
                             quantityKg === val
-                              ? 'bg-[#C59B27] text-black border-[#DFB845] font-bold'
-                              : 'bg-[#1F1A14] text-[#A39B8F] border-[#C59B27]/20 hover:text-white'
+                              ? 'bg-[#D4AF37] text-[#091610] border-[#E5C365] font-bold'
+                              : 'bg-[#0B1E16] text-[#A39B8F] border-[#D4AF37]/20 hover:text-white'
                           }`}
                         >
                           {val}k
@@ -183,7 +183,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
               {/* Delivery Terms & Destination */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-semibold text-[#DFB845] uppercase tracking-wider mb-1.5">
+                  <label className="block text-xs font-semibold text-[#E5C365] uppercase tracking-wider mb-1.5">
                     Incoterm Delivery Method
                   </label>
                   <div className="grid grid-cols-2 gap-2">
@@ -192,11 +192,11 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                       onClick={() => setDeliveryTerm('CIF')}
                       className={`p-2.5 rounded-lg border text-left text-xs font-medium transition-all ${
                         deliveryTerm === 'CIF'
-                          ? 'bg-[#C59B27]/20 border-[#DFB845] text-[#FAF7F2]'
-                          : 'bg-[#25201A] border-[#C59B27]/20 text-[#A39B8F]'
+                          ? 'bg-[#D4AF37]/20 border-[#E5C365] text-[#FAF7F2]'
+                          : 'bg-[#0F261D] border-[#D4AF37]/20 text-[#A39B8F]'
                       }`}
                     >
-                      <div className="font-bold text-sm text-[#DFB845]">CIF Airport</div>
+                      <div className="font-bold text-sm text-[#E5C365]">CIF Airport</div>
                       <div>Brinks Insured Air Freight</div>
                     </button>
                     <button
@@ -204,25 +204,25 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                       onClick={() => setDeliveryTerm('FOB')}
                       className={`p-2.5 rounded-lg border text-left text-xs font-medium transition-all ${
                         deliveryTerm === 'FOB'
-                          ? 'bg-[#C59B27]/20 border-[#DFB845] text-[#FAF7F2]'
-                          : 'bg-[#25201A] border-[#C59B27]/20 text-[#A39B8F]'
+                          ? 'bg-[#D4AF37]/20 border-[#E5C365] text-[#FAF7F2]'
+                          : 'bg-[#0F261D] border-[#D4AF37]/20 text-[#A39B8F]'
                       }`}
                     >
-                      <div className="font-bold text-sm text-[#DFB845]">FOB Vault</div>
+                      <div className="font-bold text-sm text-[#E5C365]">FOB Vault</div>
                       <div>Kampala / Entebbe Handover</div>
                     </button>
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#DFB845] uppercase tracking-wider mb-1.5">
+                  <label className="block text-xs font-semibold text-[#E5C365] uppercase tracking-wider mb-1.5">
                     Destination Hub Airport
                   </label>
                   <select
                     value={destinationAirport}
                     disabled={deliveryTerm === 'FOB'}
                     onChange={(e) => setDestinationAirport(e.target.value)}
-                    className="w-full px-3.5 py-2.5 bg-[#25201A] border border-[#C59B27]/30 rounded-lg text-sm text-[#EDE8E1] focus:outline-none focus:border-[#DFB845] disabled:opacity-50"
+                    className="w-full px-3.5 py-2.5 bg-[#0F261D] border border-[#D4AF37]/35 rounded-lg text-sm text-[#EDE8E1] focus:outline-none focus:border-[#E5C365] disabled:opacity-50"
                   >
                     <option value="DXB - Dubai International Airport">DXB - Dubai (DMCC Freezone)</option>
                     <option value="JFK - New York John F. Kennedy">JFK - New York (Duty-Free US CBP)</option>
@@ -237,7 +237,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
               </div>
 
               {/* Dynamic Live Cost Estimation Box */}
-              <div className="p-4 rounded-xl bg-gradient-to-br from-[#25201A] to-[#1F1A14] border border-[#C59B27]/30 space-y-2 text-xs">
+              <div className="p-4 rounded-xl bg-gradient-to-br from-[#0F261D] to-[#0A1D15] border border-[#D4AF37]/35 space-y-2 text-xs">
                 <div className="flex justify-between text-[#A39B8F]">
                   <span>Pure Gold Content ({gramsTotal.toLocaleString()}g @ ${productData.pricePerGramUsd}/g):</span>
                   <span className="font-mono text-[#FAF7F2]">${baseMetalPrice.toLocaleString(undefined, { maximumFractionDigits: 2 })}</span>
@@ -258,8 +258,8 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                     </div>
                   </>
                 )}
-                <div className="border-t border-[#C59B27]/20 pt-2 flex justify-between items-baseline text-sm">
-                  <span className="font-serif font-bold text-[#DFB845]">Estimated Proforma Total (USD):</span>
+                <div className="border-t border-[#D4AF37]/20 pt-2 flex justify-between items-baseline text-sm">
+                  <span className="font-serif font-bold text-[#E5C365]">Estimated Proforma Total (USD):</span>
                   <span className="font-mono text-lg font-extrabold text-[#FAF7F2]">
                     ${grandTotalUsd.toLocaleString(undefined, { maximumFractionDigits: 0 })} USD
                   </span>
@@ -269,7 +269,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
               {/* Buyer Contact Information */}
               <div className="space-y-3 pt-2">
                 <h3 className="text-xs font-bold text-[#FAF7F2] uppercase tracking-wider flex items-center gap-1.5">
-                  <User className="w-3.5 h-3.5 text-[#C59B27]" />
+                  <User className="w-3.5 h-3.5 text-[#D4AF37]" />
                   Authorized Purchaser Credentials
                 </h3>
 
@@ -281,7 +281,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
                       required
-                      className="w-full px-3.5 py-2.5 bg-[#25201A] border border-[#C59B27]/30 rounded-lg text-sm text-[#EDE8E1] placeholder-[#73654A] focus:outline-none focus:border-[#DFB845]"
+                      className="w-full px-3.5 py-2.5 bg-[#0F261D] border border-[#D4AF37]/35 rounded-lg text-sm text-[#EDE8E1] placeholder-[#5F7A6E] focus:outline-none focus:border-[#E5C365]"
                     />
                   </div>
                   <div>
@@ -290,7 +290,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                       placeholder="Company / Investment Vehicle"
                       value={companyName}
                       onChange={(e) => setCompanyName(e.target.value)}
-                      className="w-full px-3.5 py-2.5 bg-[#25201A] border border-[#C59B27]/30 rounded-lg text-sm text-[#EDE8E1] placeholder-[#73654A] focus:outline-none focus:border-[#DFB845]"
+                      className="w-full px-3.5 py-2.5 bg-[#0F261D] border border-[#D4AF37]/35 rounded-lg text-sm text-[#EDE8E1] placeholder-[#5F7A6E] focus:outline-none focus:border-[#E5C365]"
                     />
                   </div>
                   <div>
@@ -300,7 +300,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
-                      className="w-full px-3.5 py-2.5 bg-[#25201A] border border-[#C59B27]/30 rounded-lg text-sm text-[#EDE8E1] placeholder-[#73654A] focus:outline-none focus:border-[#DFB845]"
+                      className="w-full px-3.5 py-2.5 bg-[#0F261D] border border-[#D4AF37]/35 rounded-lg text-sm text-[#EDE8E1] placeholder-[#5F7A6E] focus:outline-none focus:border-[#E5C365]"
                     />
                   </div>
                   <div>
@@ -310,7 +310,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                       required
-                      className="w-full px-3.5 py-2.5 bg-[#25201A] border border-[#C59B27]/30 rounded-lg text-sm text-[#EDE8E1] placeholder-[#73654A] focus:outline-none focus:border-[#DFB845]"
+                      className="w-full px-3.5 py-2.5 bg-[#0F261D] border border-[#D4AF37]/35 rounded-lg text-sm text-[#EDE8E1] placeholder-[#5F7A6E] focus:outline-none focus:border-[#E5C365]"
                     />
                   </div>
                 </div>
@@ -321,7 +321,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                     placeholder="Specific delivery instructions, target schedule, or assay requirements..."
                     value={notes}
                     onChange={(e) => setNotes(e.target.value)}
-                    className="w-full px-3.5 py-2.5 bg-[#25201A] border border-[#C59B27]/30 rounded-lg text-sm text-[#EDE8E1] placeholder-[#73654A] focus:outline-none focus:border-[#DFB845]"
+                    className="w-full px-3.5 py-2.5 bg-[#0F261D] border border-[#D4AF37]/35 rounded-lg text-sm text-[#EDE8E1] placeholder-[#5F7A6E] focus:outline-none focus:border-[#E5C365]"
                   ></textarea>
                 </div>
               </div>
@@ -331,13 +331,13 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                 <button
                   type="submit"
                   disabled={isSubmittingQuote}
-                  className="w-full py-3.5 bg-gradient-to-r from-[#DFB845] via-[#C59B27] to-[#A37E19] text-[#15120E] font-bold text-sm tracking-wider uppercase rounded-xl shadow-gold-glow hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-75 cursor-pointer"
+                  className="w-full py-3.5 bg-gradient-to-r from-[#F0D076] via-[#D4AF37] to-[#B38F25] text-[#091610] font-bold text-sm tracking-wider uppercase rounded-xl shadow-gold-glow hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-75 cursor-pointer"
                 >
                   <span>{isSubmittingQuote ? 'Submitting to Trading Desk...' : 'Generate Official Soft Corporate Offer'}</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
-                <p className="text-[11px] text-[#73654A] text-center mt-2 flex items-center justify-center gap-1.5">
-                  <ShieldCheck className="w-3.5 h-3.5 text-[#C59B27]" />
+                <p className="text-[11px] text-[#7D9B8C] text-center mt-2 flex items-center justify-center gap-1.5">
+                  <ShieldCheck className="w-3.5 h-3.5 text-[#D4AF37]" />
                   <span>Confidential AML/KYC protected inquiry · 2-Hour Response Guaranteed</span>
                 </p>
               </div>
@@ -350,7 +350,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
               </div>
 
               <div>
-                <span className="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#C59B27]/15 text-[#DFB845] border border-[#C59B27]/30 mb-2">
+                <span className="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#D4AF37]/15 text-[#E5C365] border border-[#D4AF37]/30 mb-2">
                   OFFICIAL OFFER REF: {scoReference}
                 </span>
                 <h3 className="font-serif text-2xl font-bold text-[#FAF7F2]">
@@ -358,12 +358,12 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                 </h3>
                 <p className="text-sm text-[#A39B8F] max-w-md mx-auto mt-2">
                   Thank you, <strong className="text-[#EDE8E1]">{fullName}</strong>. A formal signed proforma invoice has been drafted for{' '}
-                  <strong className="text-[#DFB845]">{quantityKg}kg {productData.name}</strong>.
+                  <strong className="text-[#E5C365]">{quantityKg}kg {productData.name}</strong>.
                 </p>
               </div>
 
               {/* Summary Receipt Box */}
-              <div className="max-w-md mx-auto p-4 rounded-xl bg-[#25201A] border border-[#C59B27]/30 text-xs text-left space-y-2">
+              <div className="max-w-md mx-auto p-4 rounded-xl bg-[#0F261D] border border-[#D4AF37]/35 text-xs text-left space-y-2">
                 <div className="flex justify-between">
                   <span className="text-[#A39B8F]">Destination:</span>
                   <span className="text-[#EDE8E1] font-medium">{deliveryTerm === 'CIF' ? destinationAirport : 'FOB Kampala Vault'}</span>
@@ -376,8 +376,8 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                   <span className="text-[#A39B8F]">Assay Verification:</span>
                   <span className="text-emerald-400 font-medium">Live Video XRF prior to wire release</span>
                 </div>
-                <div className="flex justify-between border-t border-[#C59B27]/20 pt-2 text-sm font-bold">
-                  <span className="text-[#DFB845]">Estimated Amount:</span>
+                <div className="flex justify-between border-t border-[#D4AF37]/20 pt-2 text-sm font-bold">
+                  <span className="text-[#E5C365]">Estimated Amount:</span>
                   <span className="font-mono text-[#FAF7F2]">${grandTotalUsd.toLocaleString(undefined, { maximumFractionDigits: 0 })} USD</span>
                 </div>
               </div>
@@ -398,7 +398,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                     setIsSubmitted(false);
                     onClose();
                   }}
-                  className="w-full sm:w-auto px-6 py-3 bg-[#29221B] hover:bg-[#3A3229] text-[#EDE8E1] font-semibold text-xs tracking-wider uppercase rounded-xl border border-[#C59B27]/30 transition-colors"
+                  className="w-full sm:w-auto px-6 py-3 bg-[#0E281D] hover:bg-[#153B2B] text-[#EDE8E1] font-semibold text-xs tracking-wider uppercase rounded-xl border border-[#D4AF37]/30 transition-colors cursor-pointer"
                 >
                   Close & Return to Site
                 </button>
