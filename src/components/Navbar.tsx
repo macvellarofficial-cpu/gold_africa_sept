@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { OrangeInvestmentsLogo } from './OrangeInvestmentsLogo';
 
 interface NavbarProps {
   onOpenQuoteModal: () => void;
@@ -16,31 +17,23 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuoteModal }) => {
       {/* ── TOPBAR ── */}
       <div className="gbs-topbar">
         <div className="gbs-topbar-inner">
-          <div className="gbs-topbar-left">
-            <span>Licensed Gold Exporter — Uganda & Kenya</span>
-            <span>Insured Worldwide Delivery</span>
+          <div className="gbs-topbar-left flex items-center gap-3">
+            <span>Reg. No: <strong>80020000702132</strong> · Lubowa, Kampala, Uganda</span>
+            <span>· Insured Worldwide Delivery</span>
           </div>
-          <div>
-            <a href="mailto:info@goldbarsuppliers.com">info@goldbarsuppliers.com</a>
+          <div className="flex items-center gap-4">
+            <a href="https://wa.me/256754681378" target="_blank" rel="noopener noreferrer">
+              WhatsApp: +256 754 681378
+            </a>
+            <a href="mailto:info@buygold.blog">info@buygold.blog</a>
           </div>
         </div>
       </div>
 
       {/* ── MAIN NAV BAR ── */}
       <div className="gbs-main">
-        <Link to="/" className="gbs-logo" aria-label="Gold Bar Suppliers — home">
-          <img
-            src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/cropped-logoz-300x230.png"
-            alt="Gold Bar Suppliers logo"
-            onError={(e) => {
-              e.currentTarget.src =
-                "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='46' viewBox='0 0 60 46'%3E%3Cpolygon points='10,38 20,12 40,12 50,38' fill='%23C5A059' stroke='%238A6D2B' stroke-width='1.5'/%3E%3Ctext x='30' y='30' font-family='serif' font-size='10' font-weight='bold' fill='%23241A06' text-anchor='middle'%3EGBS%3C/text%3E%3C/svg%3E";
-            }}
-          />
-          <span className="gbs-logo-text">
-            <span className="name">Gold Bar Suppliers</span>
-            <span className="tag">Certified · Mine-Direct · Assayed</span>
-          </span>
+        <Link to="/" className="gbs-logo" aria-label="Orange Investments Co. Ltd — home">
+          <OrangeInvestmentsLogo variant="dark" />
         </Link>
 
         <button

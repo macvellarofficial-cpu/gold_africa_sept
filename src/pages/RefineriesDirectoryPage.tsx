@@ -71,7 +71,7 @@ export const RefineriesDirectoryPage: React.FC<RefineriesDirectoryPageProps> = (
               <b>How to Purchase Verified AGR Bullion Through Us</b>
             </h3>
             <p style={{ fontSize: '1rem', lineHeight: 1.8, color: 'var(--charcoal)', marginBottom: '16px' }}>
-              Gold Bar Suppliers Ltd works directly with accredited refiners and licensed dealers in Entebbe to facilitate transparent, documented purchases of certified African gold bars. Every bar comes with independent SGS / Bureau Veritas assay certificates, Certificate of Origin, and insured Brinks cargo logistics.
+              Orange Investments Company Limited works directly with accredited refiners and licensed dealers in Entebbe to facilitate transparent, documented purchases of certified African gold bars. Every bar comes with independent SGS / Bureau Veritas assay certificates, Certificate of Origin, and insured Brinks cargo logistics.
             </p>
 
             <div style={{ marginTop: '36px', display: 'flex', gap: '14px', flexWrap: 'wrap' }}>

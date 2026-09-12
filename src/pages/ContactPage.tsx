@@ -31,13 +31,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
       {/* ════════════════════════════════════════
            HERO BANNER
       ════════════════════════════════════════════ */}
-      <section className="contact-hero" aria-label="Contact Gold Bar Suppliers Ltd">
+      <section className="contact-hero" aria-label="Contact Orange Investments Company Limited">
         <div className="hero-bg" aria-hidden="true"></div>
         <div className="hero-overlay" aria-hidden="true"></div>
         <div className="hero-content">
           <div className="hero-eyebrow">Get in Touch</div>
           <h1>
-            Contact <em>Gold Bar Suppliers</em> Ltd
+            Contact <em>Orange Investments</em> Co. Ltd
           </h1>
           <p>
             Certified 24K, 22K &amp; 18K gold bar enquiries, export documentation, live pricing, and wholesale orders — our team responds within 2 hours.
@@ -196,25 +196,35 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
             <div className="info-card-img">
               <SafeImage
                 src="https://goldbarsuppliers.com/wp-content/uploads/2026/06/Where-to-Buy-Gold-in-Sudan.webp"
-                alt="Gold Bar Suppliers Ltd — Kajokya Street Kampala Uganda office"
+                alt="Orange Investments Company Limited — Lubowa Kampala Uganda headquarters"
                 fallbackCategory="vault"
                 loading="lazy"
               />
             </div>
 
             <div className="info-card-body">
-              <h3>Gold Bar Suppliers Ltd</h3>
+              <h3>Orange Investments Co. Ltd</h3>
               <p className="tagline">
-                Africa's certified gold bar dealer — connecting international investors with pure African gold since 2010.
+                Orange Investments Company Limited — Licensed precious metals supplier connecting international investors with pure African gold (Reg. No: 80020000702132).
               </p>
 
               <div className="contact-items">
                 <div className="contact-item">
+                  <div className="contact-icon">📜</div>
+                  <div>
+                    <div className="contact-item-label">Registration Number</div>
+                    <div className="contact-item-value" style={{ fontFamily: 'monospace', fontWeight: 700, color: 'var(--gold-lt)' }}>
+                      80020000702132
+                    </div>
+                  </div>
+                </div>
+
+                <div className="contact-item">
                   <div className="contact-icon">📧</div>
                   <div>
-                    <div className="contact-item-label">Email</div>
+                    <div className="contact-item-label">Email Address</div>
                     <div className="contact-item-value">
-                      <a href="mailto:info@goldbarsuppliers.com">info@goldbarsuppliers.com</a>
+                      <a href="mailto:info@buygold.blog">info@buygold.blog</a>
                     </div>
                   </div>
                 </div>
@@ -224,7 +234,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
                   <div>
                     <div className="contact-item-label">Phone / WhatsApp</div>
                     <div className="contact-item-value">
-                      <a href="tel:+256730763340">+256 730 763340</a>
+                      <a href="https://wa.me/256754681378" target="_blank" rel="noopener noreferrer">+256 754 681378</a>
                     </div>
                   </div>
                 </div>
@@ -232,10 +242,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
                 <div className="contact-item">
                   <div className="contact-icon">📍</div>
                   <div>
-                    <div className="contact-item-label">Office Address</div>
+                    <div className="contact-item-label">Physical Office Location</div>
                     <div className="contact-item-value">
-                      Kajokya Street, Kamokya<br />
-                      Kampala, Uganda
+                      Lubowa, Kampala<br />
+                      Uganda
                     </div>
                   </div>
                 </div>
@@ -313,7 +323,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
             <div style={{ height: '180px', overflow: 'hidden', position: 'relative' }}>
               <SafeImage
                 src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/gold-3.webp"
-                alt="Certified African gold bars for international export — Gold Bar Suppliers Ltd"
+                alt="Certified African gold bars for international export — Orange Investments Company Limited"
                 fallbackCategory="bars"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 loading="lazy"
@@ -340,7 +350,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
       {/* ════════════════════════════════════════
            WHY CONTACT US STRIP
       ════════════════════════════════════════════ */}
-      <section className="why-strip" aria-label="Why contact Gold Bar Suppliers Ltd">
+      <section className="why-strip" aria-label="Why contact Orange Investments Company Limited">
         <div className="why-strip-inner">
           <div className="why-item">
             <span className="why-icon">⚡</span>
@@ -377,14 +387,14 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
                 Find Us
               </div>
               <h2 id="map-title">Our Office Location</h2>
-              <p>Kajokya Street, Kamokya, Kampala, Uganda &nbsp;·&nbsp; Near Kamokya Shopping Centre</p>
+              <p>Lubowa, Kampala, Uganda &nbsp;·&nbsp; Reg. No: 80020000702132</p>
             </div>
             <a
-              href="https://www.google.com/maps/dir/?api=1&destination=Kajokya+Street+Kamokya+Kampala+Uganda"
+              href="https://www.google.com/maps/dir/?api=1&destination=Lubowa+Kampala+Uganda"
               target="_blank"
               rel="noopener noreferrer"
               className="map-directions"
-              aria-label="Get directions to Gold Bar Suppliers Ltd office"
+              aria-label="Get directions to Orange Investments Company Limited office"
             >
               📍 Get Directions
             </a>
@@ -393,12 +403,12 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
           <div className="map-frame-wrap">
             <iframe
               className="map-frame"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7573!2d32.5698!3d0.3136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb0e3e0f0001%3A0x6e0b0c0d0e0f0001!2sKajokya%20Street%2C%20Kamokya%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sug!4v1718000000000!5m2!1sen!2sug"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8179!2d32.5562!3d0.2443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbbf7f0f00001%3A0x1b2c3d4e5f6a7b8c!2sLubowa%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sug!4v1718000000000!5m2!1sen!2sug"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Gold Bar Suppliers Ltd office location — Kajokya Street Kampala Uganda"
-              aria-label="Google Map showing Gold Bar Suppliers Ltd office at Kajokya Street, Kamokya, Kampala"
+              title="Orange Investments Company Limited office location — Lubowa Kampala Uganda"
+              aria-label="Google Map showing Orange Investments Company Limited office at Lubowa, Kampala"
             ></iframe>
           </div>
 
@@ -407,22 +417,22 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
             <div style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: 'var(--r-md)', padding: '20px', display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
               <span style={{ fontSize: '1.4rem', flexShrink: 0 }}>📍</span>
               <div>
-                <strong style={{ display: 'block', fontSize: '.85rem', color: 'var(--dark)', marginBottom: '4px' }}>Street Address</strong>
-                <span style={{ fontSize: '.8rem', color: 'var(--stone)', lineHeight: 1.6 }}>Kajokya Street, Kamokya<br />Kampala, Uganda</span>
+                <strong style={{ display: 'block', fontSize: '.85rem', color: 'var(--dark)', marginBottom: '4px' }}>Headquarters Location</strong>
+                <span style={{ fontSize: '.8rem', color: 'var(--stone)', lineHeight: 1.6 }}>Lubowa, Entebbe Road<br />Kampala, Uganda</span>
               </div>
             </div>
             <div style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: 'var(--r-md)', padding: '20px', display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
               <span style={{ fontSize: '1.4rem', flexShrink: 0 }}>✈️</span>
               <div>
                 <strong style={{ display: 'block', fontSize: '.85rem', color: 'var(--dark)', marginBottom: '4px' }}>Nearest Airport</strong>
-                <span style={{ fontSize: '.8rem', color: 'var(--stone)', lineHeight: 1.6 }}>Entebbe International Airport (EBB)<br />~40 km from office</span>
+                <span style={{ fontSize: '.8rem', color: 'var(--stone)', lineHeight: 1.6 }}>Entebbe International Airport (EBB)<br />~25 km via Expressway</span>
               </div>
             </div>
             <div style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: 'var(--r-md)', padding: '20px', display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
               <span style={{ fontSize: '1.4rem', flexShrink: 0 }}>🏦</span>
               <div>
-                <strong style={{ display: 'block', fontSize: '.85rem', color: 'var(--dark)', marginBottom: '4px' }}>Nearby Landmark</strong>
-                <span style={{ fontSize: '.8rem', color: 'var(--stone)', lineHeight: 1.6 }}>Kamokya Shopping Centre<br />Central Kampala, Uganda</span>
+                <strong style={{ display: 'block', fontSize: '.85rem', color: 'var(--dark)', marginBottom: '4px' }}>Nearby Landmark & Reg</strong>
+                <span style={{ fontSize: '.8rem', color: 'var(--stone)', lineHeight: 1.6 }}>Quality Shopping Village, Lubowa<br />Reg. No: 80020000702132</span>
               </div>
             </div>
           </div>
@@ -447,19 +457,19 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
             <div className="faq-item">
               <div className="faq-q">What is the current gold bar price from Africa?</div>
               <p className="faq-a">
-                As of June 2026, the 24K gold bar price is approximately $139.39/gram ($139,390/kg) at LBMA spot. Gold Bar Suppliers Ltd prices at 1.5–3% above spot. Contact us for a live quote — we update pricing in real time.
+                As of June 2026, the 24K gold bar price is approximately $139.39/gram ($139,390/kg) at LBMA spot. Orange Investments Company Limited prices at 1.5–3% above spot. Contact us for a live quote — we update pricing in real time.
               </p>
             </div>
             <div className="faq-item">
               <div className="faq-q">How long does it take to receive a response?</div>
               <p className="faq-a">
-                All enquiries submitted via the contact form or WhatsApp receive a response within 2 business hours Monday–Saturday. For urgent enquiries, WhatsApp (+256 730 763340) typically receives a faster response, often within 30 minutes during business hours.
+                All enquiries submitted via the contact form or WhatsApp receive a response within 2 business hours Monday–Saturday. For urgent enquiries, WhatsApp (+256 754 681378) typically receives a faster response, often within 30 minutes during business hours.
               </p>
             </div>
             <div className="faq-item">
               <div className="faq-q">Can I visit your office in Kampala to buy gold?</div>
               <p className="faq-a">
-                Yes — in-person buyers are welcome at our Kajokya Street, Kamokya, Kampala office. Please contact us to schedule an appointment before visiting. We recommend bringing a valid government ID and arriving during regular business hours (8 AM–6 PM EAT, Monday–Friday).
+                Yes — in-person buyers are welcome at our Lubowa, Kampala office. Please contact us to schedule an appointment before visiting. We recommend bringing a valid government ID and arriving during regular business hours (8 AM–6 PM EAT, Monday–Friday).
               </p>
             </div>
             <div className="faq-item">
@@ -471,7 +481,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
             <div className="faq-item">
               <div className="faq-q">Do you offer wholesale pricing for large orders?</div>
               <p className="faq-a">
-                Yes. Gold Bar Suppliers Ltd offers volume-based pricing for orders of 5kg and above. Orders of 50kg+ receive our most competitive rates — typically 1.5% above spot with reduced documentation fees. Contact us directly for wholesale pricing sheets and bulk order terms.
+                Yes. Orange Investments Company Limited offers volume-based pricing for orders of 5kg and above. Orders of 50kg+ receive our most competitive rates — typically 1.5% above spot with reduced documentation fees. Contact us directly for wholesale pricing sheets and bulk order terms.
               </p>
             </div>
             <div className="faq-item">

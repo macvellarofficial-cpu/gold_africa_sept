@@ -11,7 +11,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
       {/* ═══════════════════════════════════════
            HERO
       ═══════════════════════════════════════════ */}
-      <section className="hero" aria-label="Gold Bar Suppliers Ltd Services">
+      <section className="hero" aria-label="Orange Investments Company Limited Services">
         <div className="hero-bg" aria-hidden="true"></div>
         <div className="hero-veil" aria-hidden="true"></div>
 
@@ -25,7 +25,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
               You Need — <em>Under One Roof.</em>
             </h1>
             <p className="hero-sub">
-              Gold Bar Suppliers Ltd provides the complete African gold service: certified{' '}
+              Orange Investments Company Limited provides the complete African gold service: certified{' '}
               <Link to="/gold-bars-for-sale" style={{ color: 'var(--gold-lt)', fontWeight: 600 }}>
                 24K, 22K, and 18K gold bars
               </Link>
@@ -249,7 +249,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
               </tbody>
             </table>
             <p style={{ marginTop: '10px', fontSize: '.75rem', color: 'var(--stone)' }}>
-              *All prices based on LBMA spot $139.39/gram (June 16, 2026). Retail includes 1.5–3% Gold Bar Suppliers Ltd premium.
+              *All prices based on LBMA spot $139.39/gram (June 16, 2026). Retail includes 1.5–3% Orange Investments Company Limited premium.
             </p>
           </div>
         </div>
@@ -272,7 +272,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
               <div className="eyebrow">Service 02 & 03</div>
               <h2 className="h2" id="nug-title">Gold Nuggets from Africa & Raw Gold Dust Online</h2>
               <p className="lead" style={{ margin: '14px 0 0' }}>
-                Beyond refined bars, Gold Bar Suppliers Ltd supplies the full spectrum of natural and semi-refined African gold — from collector-grade natural nuggets to artisanal gold dust and semi-refined dore bars for wholesale refiners.
+                Beyond refined bars, Orange Investments Company Limited supplies the full spectrum of natural and semi-refined African gold — from collector-grade natural nuggets to artisanal gold dust and semi-refined dore bars for wholesale refiners.
               </p>
               <div className="feat-list">
                 <div className="feat-item" id="nuggets-detail">
@@ -321,7 +321,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
             <div className="eyebrow">Services 04 · 05 · 06</div>
             <h2 className="h2" id="comp-title">XRF Assay, Gold Export Documentation & Insured Shipping</h2>
             <p className="lead" style={{ marginTop: '14px', maxWidth: '660px' }}>
-              The three compliance services that make every Gold Bar Suppliers Ltd transaction bankable, legally importable, and fraud-proof. These are not optional add-ons — they are standard features of every order we process.
+              The three compliance services that make every Orange Investments Company Limited transaction bankable, legally importable, and fraud-proof. These are not optional add-ons — they are standard features of every order we process.
             </p>
           </div>
 
@@ -335,7 +335,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
                 <span className="srv-icon">🔬</span>
                 <h3>Independent XRF Assay Service</h3>
                 <p>
-                  Before any payment is requested, Gold Bar Suppliers Ltd conducts a live WhatsApp or Zoom video XRF (X-ray fluorescence) purity test on your specific gold consignment — conducted by SGS Uganda, Bureau Veritas, or an equivalent DGSM-accredited laboratory. You watch 999.9 fineness confirmed in real time on screen.
+                  Before any payment is requested, Orange Investments Company Limited conducts a live WhatsApp or Zoom video XRF (X-ray fluorescence) purity test on your specific gold consignment — conducted by SGS Uganda, Bureau Veritas, or an equivalent DGSM-accredited laboratory. You watch 999.9 fineness confirmed in real time on screen.
                 </p>
                 <ul className="srv-list">
                   <li>Live video XRF before every payment</li>
@@ -359,7 +359,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
                 <span className="srv-icon">📄</span>
                 <h3>Gold Export Documentation Service</h3>
                 <p>
-                  Every international gold shipment from Uganda requires a specific set of legal documents to clear customs at origin and destination. Gold Bar Suppliers Ltd prepares the complete documentation package — from DGSM export permit and Uganda Revenue Authority tax compliance to OECD Due Diligence records.
+                  Every international gold shipment from Uganda requires a specific set of legal documents to clear customs at origin and destination. Orange Investments Company Limited prepares the complete documentation package — from DGSM export permit and Uganda Revenue Authority tax compliance to OECD Due Diligence records.
                 </p>
                 <ul className="srv-list">
                   <li>DGSM export permit</li>
@@ -385,7 +385,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
                 <span className="srv-icon">🚛</span>
                 <h3>Insured Brinks Gold Shipping Worldwide</h3>
                 <p>
-                  All gold shipments from Gold Bar Suppliers Ltd travel with Brinks International or Malca-Amit insured armoured cargo — GPS-tracked from Entebbe International Airport (EBB) to your delivery address. Full declared-value insurance through Lloyd's of London or equivalent.
+                  All gold shipments from Orange Investments Company Limited travel with Brinks International or Malca-Amit insured armoured cargo — GPS-tracked from Entebbe International Airport (EBB) to your delivery address. Full declared-value insurance through Lloyd's of London or equivalent.
                 </p>
                 <ul className="srv-list">
                   <li>Brinks or Malca-Amit insured armoured cargo</li>
@@ -414,7 +414,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
               <div className="eyebrow">Services 07 & 08</div>
               <h2 className="h2" id="whl-title">Wholesale Gold Orders & Direct Mine Sourcing</h2>
               <p className="lead" style={{ margin: '16px 0 0' }}>
-                For bulk buyers, institutional investors, and jewellery manufacturers who need consistent large-volume supply, Gold Bar Suppliers Ltd offers two high-value services that deliver maximum cost efficiency: wholesale pricing and direct mine access.
+                For bulk buyers, institutional investors, and jewellery manufacturers who need consistent large-volume supply, Orange Investments Company Limited offers two high-value services that deliver maximum cost efficiency: wholesale pricing and direct mine access.
               </p>
 
               <div className="feat-list" style={{ marginTop: '28px' }}>
@@ -447,7 +447,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
                   <div>
                     <h4>Direct Mine Sourcing — Buy Gold Direct from Miners</h4>
                     <p>
-                      For buyers who want maximum transparency and the deepest mine-proximate pricing, Gold Bar Suppliers Ltd connects international buyers directly with Uganda's licensed artisanal mining cooperatives in Karamoja, Mubende, and Busia.
+                      For buyers who want maximum transparency and the deepest mine-proximate pricing, Orange Investments Company Limited connects international buyers directly with Uganda's licensed artisanal mining cooperatives in Karamoja, Mubende, and Busia.
                     </p>
                   </div>
                 </div>
@@ -482,7 +482,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
               How Every Gold Service Order Works — Start to Delivery
             </h2>
             <p className="lead-w" style={{ margin: '14px auto 0', textAlign: 'center', maxWidth: '580px' }}>
-              Every Gold Bar Suppliers Ltd transaction follows the same documented, fraud-proof, bank-compliant process — regardless of order size.
+              Every Orange Investments Company Limited transaction follows the same documented, fraud-proof, bank-compliant process — regardless of order size.
             </p>
           </div>
           <div className="proc-grid">
@@ -587,7 +587,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
           </div>
           <div className="faq-cols">
             <div className="faq-item">
-              <div className="fq">What gold services does Gold Bar Suppliers Ltd offer?</div>
+              <div className="fq">What gold services does Orange Investments Company Limited offer?</div>
               <p className="fa">We offer eight core services: (1) Certified 24K gold bar supply, (2) 22K gold bar supply, (3) 18K gold bar supply, (4) Gold nuggets from Africa, (5) Raw gold dust and dore bars, (6) Independent XRF assay, (7) Gold export documentation, and (8) Insured Brinks international shipping. All services are available remotely — no travel to Uganda required.</p>
             </div>
             <div className="faq-item">
@@ -596,7 +596,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
             </div>
             <div className="faq-item">
               <div className="fq">Can I buy gold bars from Africa and ship to the USA?</div>
-              <p className="fa">Yes. Investment-grade gold bullion (HS code 7108.12) enters the USA duty-free. All shipments must be declared at US CBP port of entry. Gold Bar Suppliers Ltd provides the complete documentation package — Certificate of Origin, assay certificate, commercial invoice — that CBP requires. Brinks delivers to US addresses in 4–7 business days from Entebbe.</p>
+              <p className="fa">Yes. Investment-grade gold bullion (HS code 7108.12) enters the USA duty-free. All shipments must be declared at US CBP port of entry. Orange Investments Company Limited provides the complete documentation package — Certificate of Origin, assay certificate, commercial invoice — that CBP requires. Brinks delivers to US addresses in 4–7 business days from Entebbe.</p>
             </div>
             <div className="faq-item">
               <div className="fq">What is the minimum order for your gold services?</div>
@@ -617,12 +617,12 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
       {/* ═══════════════════════════════════════
            FINAL CTA
       ═══════════════════════════════════════════ */}
-      <section className="cta-banner" aria-label="Contact Gold Bar Suppliers Ltd">
+      <section className="cta-banner" aria-label="Contact Orange Investments Company Limited">
         <div className="cta-inner">
           <div>
             <h2>Every Gold Service You Need — One Trusted Partner.</h2>
             <p>
-              Gold Bar Suppliers Ltd is Uganda's most documented, most transparent, and most internationally compliant gold service provider. Whether you want to buy certified 24K gold bars, source natural gold nuggets from Africa, purchase gold dore bars for your refinery, or access direct mine sourcing — our team builds your custom service package today.
+              Orange Investments Company Limited is Uganda's most documented, most transparent, and most internationally compliant gold service provider. Whether you want to buy certified 24K gold bars, source natural gold nuggets from Africa, purchase gold dore bars for your refinery, or access direct mine sourcing — our team builds your custom service package today.
             </p>
             <div className="cta-btns" style={{ display: 'flex', gap: '14px', marginTop: '28px', flexWrap: 'wrap' }}>
               <Link to="/gold-bars-for-sale" className="btn btn-gold">🪙 Shop Gold Bars Now</Link>
@@ -633,7 +633,9 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
             <div className="cta-phone">
               <div className="phone-ring">📞</div>
               <div>
-                <strong>+256 709 970 859</strong>
+                <a href="https://wa.me/256754681378" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                  <strong>+256 754 681378</strong>
+                </a>
                 <small>WhatsApp & Calls · Mon–Sat 8am–6pm EAT</small>
               </div>
             </div>

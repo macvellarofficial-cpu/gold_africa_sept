@@ -11,21 +11,21 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
       {/* ══════════════════════════════
            HERO / PAGE OPENER
       ══════════════════════════════════ */}
-      <section className="page-hero" aria-label="About Gold Bar Suppliers Ltd">
+      <section className="page-hero" aria-label="About Orange Investments Company Limited">
         <div className="ph-bg" aria-hidden="true"></div>
         <div className="ph-veil" aria-hidden="true"></div>
 
         <div className="ph-inner">
           <div>
             <div className="ph-badge">
-              <span></span> Uganda's Premier Gold Bar Dealer
+              <span></span> Uganda's Premier Gold Bar Dealer · Reg. No: 80020000702132
             </div>
             <h1>
               The Gold Experts<br />
               <em>Africa Trusts.</em>
             </h1>
             <p className="ph-sub">
-              Gold Bar Suppliers Ltd is Uganda's most trusted certified gold bar dealer — based at Acacia Mall, Kampala, and serving investors, institutions, and jewellery manufacturers across Africa, the USA, UAE, and Europe with pure 24K, 22K, and 18K gold bars direct from Africa's richest mines.
+              Orange Investments Company Limited (Reg. No: 80020000702132) is Uganda's most trusted certified gold bar dealer — based in Lubowa, Kampala, and serving investors, institutions, and jewellery manufacturers across Africa, the USA, UAE, and Europe with pure 24K, 22K, and 18K gold bars direct from Africa's richest mines.
             </p>
             <div className="ph-actions">
               <Link to="/gold-bars-for-sale" className="btn btn-gold">
@@ -39,8 +39,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
 
           {/* Key stats card */}
           <div className="ph-card">
-            <h3>Gold Bar Suppliers Ltd</h3>
-            <p className="sub">Africa's certified precious metals dealer — Kampala, Uganda</p>
+            <h3>Orange Investments Co. Ltd</h3>
+            <p className="sub">Reg. No: 80020000702132 · Lubowa, Kampala, Uganda</p>
 
             <div className="stat-row">
               <div className="stat-box">
@@ -124,7 +124,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
             <div className="split-img">
               <img
                 src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/buygold.jpeg"
-                alt="Gold Bar Suppliers Ltd — certified gold bars Africa Uganda Kampala dealer"
+                alt="Orange Investments Company Limited — certified gold bars Africa Uganda Kampala dealer"
                 loading="lazy"
               />
               <div className="split-badge">
@@ -140,7 +140,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
               </h2>
 
               <p className="body-text" style={{ marginTop: '18px' }}>
-                Gold Bar Suppliers Ltd is a licensed precious metals dealer headquartered at Acacia Mall in Kampala, Uganda — East Africa's most important gold trading city. We have been connecting serious investors, institutions, and jewellery manufacturers with certified African gold bars since our founding, building a reputation as the region's most transparent, reliable, and well-documented gold supplier.
+                Orange Investments Company Limited (Registration No: 80020000702132) is a licensed precious metals dealer headquartered in Lubowa, Kampala, Uganda — East Africa's most important gold trading hub. We have been connecting serious investors, institutions, and jewellery manufacturers with certified African gold bars since our founding, building a reputation as the region's most transparent, reliable, and well-documented gold supplier.
               </p>
 
               <div className="highlight-box">
@@ -174,9 +174,9 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
         <div className="wrap">
           <div style={{ textAlign: 'center', marginBottom: '52px' }}>
             <div className="eyebrow">Our Core Values</div>
-            <h2 className="h2" id="values-title">What Makes Gold Bar Suppliers Different</h2>
+            <h2 className="h2" id="values-title">What Makes Orange Investments Different</h2>
             <p className="lead" style={{ margin: '14px auto 0', textAlign: 'center', maxWidth: '600px' }}>
-              Every licensed gold dealer in Africa claims to be trustworthy. Here is what Gold Bar Suppliers Ltd does that most others do not.
+              Every licensed gold dealer in Africa claims to be trustworthy. Here is what Orange Investments Company Limited does that most others do not.
             </p>
           </div>
 
@@ -242,7 +242,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
                 Our mission is to close the gap between Africa's extraordinary gold wealth and the international investors, jewellery manufacturers, and institutions who want to access it — safely, legally, and at the most competitive prices available anywhere in the world.
               </p>
               <p style={{ fontSize: '.9rem', color: 'rgba(255,255,255,.55)', lineHeight: 1.78, marginBottom: '28px' }}>
-                For too long, international buyers have paid 6–11% retail premiums to access African gold through Western distribution chains. For too long, they have been burned by unverified dealers, missing documentation, and customs complications. Gold Bar Suppliers Ltd exists to solve all three problems simultaneously — with direct mine access, independent assay, and bankable compliance documentation as standard features of every transaction, not optional add-ons.
+                For too long, international buyers have paid 6–11% retail premiums to access African gold through Western distribution chains. For too long, they have been burned by unverified dealers, missing documentation, and customs complications. Orange Investments Company Limited exists to solve all three problems simultaneously — with direct mine access, independent assay, and bankable compliance documentation as standard features of every transaction, not optional add-ons.
               </p>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
                 <div style={{ background: 'rgba(255,255,255,.06)', border: '1px solid rgba(255,255,255,.1)', borderRadius: 'var(--r-md)', padding: '18px' }}>
@@ -268,7 +268,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
               <div style={{ borderRadius: 'var(--r-lg)', height: '420px', overflow: 'hidden' }}>
                 <img
                   src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/gold-nuggetd.jpeg"
-                  alt="Gold nuggets Africa — Gold Bar Suppliers Ltd certified artisanal gold"
+                  alt="Gold nuggets Africa — Orange Investments Company Limited certified artisanal gold"
                   style={{ height: '100%', objectFit: 'cover', width: '100%', transition: 'transform .7s' }}
                   loading="lazy"
                 />
@@ -398,7 +398,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
         <div className="wrap">
           <div style={{ textAlign: 'center', marginBottom: '56px' }}>
             <div className="eyebrow">Our Process</div>
-            <h2 className="h2" id="process-title">How Buying Gold from Gold Bar Suppliers Works</h2>
+            <h2 className="h2" id="process-title">How Buying Gold from Orange Investments Works</h2>
             <p className="lead" style={{ margin: '14px auto 0', textAlign: 'center', maxWidth: '580px' }}>
               A straightforward, documented, fraud-proof process — designed to protect your capital at every step from first contact to delivery.
             </p>
@@ -446,7 +446,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
             <div className="exp-img">
               <img
                 src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/buygold.jpeg"
-                alt="Gold Bar Suppliers team expertise Uganda Kampala gold trading"
+                alt="Orange Investments team expertise Uganda Kampala gold trading"
                 loading="lazy"
               />
             </div>
@@ -454,7 +454,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
               <div className="eyebrow">Our Expertise</div>
               <h2 className="h2" id="expertise-title">8 Years of African Gold Market Knowledge — At Your Service</h2>
               <p className="lead" style={{ margin: '16px 0 0' }}>
-                Gold Bar Suppliers Ltd was built by people who have spent their careers inside Africa's gold supply chain — from mine sites in Busia and Karamoja to export documentation offices in Kampala to delivery handoffs at Entebbe International Airport.
+                Orange Investments Company Limited was built by people who have spent their careers inside Africa's gold supply chain — from mine sites in Busia and Karamoja to export documentation offices in Kampala to delivery handoffs at Entebbe International Airport.
               </p>
               <div className="exp-list">
                 <div className="exp-item">
@@ -508,7 +508,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
             <div className="eyebrow">Compliance & Credentials</div>
             <h2 className="h2" id="cert-title">The Standards We Meet — So Your Gold Clears Customs Worldwide</h2>
             <p className="lead" style={{ margin: '14px auto 0', textAlign: 'center', maxWidth: '600px' }}>
-              Certification is not a marketing claim at Gold Bar Suppliers Ltd — it is the foundation of every transaction we execute.
+              Certification is not a marketing claim at Orange Investments Company Limited — it is the foundation of every transaction we execute.
             </p>
           </div>
           <div className="cert-grid">
@@ -559,12 +559,12 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
       {/* ══════════════════════════════
            FINAL CTA + CONTACT
       ══════════════════════════════════ */}
-      <section className="final-cta" aria-label="Contact Gold Bar Suppliers Ltd">
+      <section className="final-cta" aria-label="Contact Orange Investments Company Limited">
         <div className="fca-inner">
           <div>
             <h2>Ready to Buy Certified Gold Bars from Africa?</h2>
             <p>
-              Gold Bar Suppliers Ltd has connected hundreds of investors, jewellery manufacturers, and institutions with certified African gold bars at mine-direct pricing. At today's live rate of <strong style={{ color: 'var(--gold-lt)' }}>$139.39/gram ($139,390/kg)</strong>, gold remains one of the world's most compelling investment assets — and buying direct from Africa saves you thousands per kilogram versus Western retail channels.
+              Orange Investments Company Limited has connected hundreds of investors, jewellery manufacturers, and institutions with certified African gold bars at mine-direct pricing. At today's live rate of <strong style={{ color: 'var(--gold-lt)' }}>$139.39/gram ($139,390/kg)</strong>, gold remains one of the world's most compelling investment assets — and buying direct from Africa saves you thousands per kilogram versus Western retail channels.
             </p>
             <p>
               Whether you want to buy <Link to="/gold-bars-for-sale" style={{ color: 'var(--gold-lt)', fontWeight: 600 }}>24K gold bars</Link>, source <Link to="/buy-gold-nuggets-from-africa" style={{ color: 'var(--gold-lt)', fontWeight: 600 }}>gold nuggets from Africa</Link>, purchase <Link to="/gold-dore-bars-for-sale" style={{ color: 'var(--gold-lt)', fontWeight: 600 }}>gold dore bars for refining</Link>, or explore the full African gold catalog — our team is ready to build your custom quote today.
@@ -582,10 +582,17 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
           <div className="contact-panel">
             <h4>Get In Touch</h4>
             <div className="contact-row">
+              <div className="cr-icon">📜</div>
+              <div>
+                <div className="cr-label">Company Registration</div>
+                <div className="cr-val" style={{ fontFamily: 'monospace', fontWeight: 700 }}>80020000702132</div>
+              </div>
+            </div>
+            <div className="contact-row">
               <div className="cr-icon">📍</div>
               <div>
                 <div className="cr-label">Physical Office</div>
-                <div className="cr-val">Acacia Mall, Kampala, Uganda</div>
+                <div className="cr-val">Lubowa, Kampala, Uganda</div>
               </div>
             </div>
             <div className="contact-row">
@@ -593,7 +600,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
               <div>
                 <div className="cr-label">WhatsApp / Phone</div>
                 <div className="cr-val">
-                  <a href="tel:+256730763340" style={{ color: 'inherit' }}>+256 730 763340</a> (24/7 Available)
+                  <a href="https://wa.me/256754681378" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>+256 754 681378</a> (24/7 Available)
                 </div>
               </div>
             </div>
@@ -602,7 +609,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
               <div>
                 <div className="cr-label">Email</div>
                 <div className="cr-val">
-                  <a href="mailto:info@goldbarsuppliers.com" style={{ color: 'inherit' }}>info@goldbarsuppliers.com</a>
+                  <a href="mailto:info@buygold.blog" style={{ color: 'inherit' }}>info@buygold.blog</a>
                 </div>
               </div>
             </div>

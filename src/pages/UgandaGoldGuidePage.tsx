@@ -122,14 +122,14 @@ export const UgandaGoldGuidePage: React.FC<UgandaGoldGuideProps> = ({ onOpenQuot
               Uganda Trade Desk
             </h2>
             <p style={{ fontSize: '.86rem', color: 'var(--stone)', lineHeight: 1.7, marginBottom: '20px' }}>
-              Speak directly with our licensed commercial trade desk at Acacia Mall, Kampala, Uganda.
+              Speak directly with our licensed commercial trade desk in Lubowa, Kampala, Uganda.
             </p>
 
             <div style={{ padding: '16px', background: 'var(--white)', borderRadius: 'var(--r)', border: '1px solid var(--border)', marginBottom: '24px' }}>
-              <span style={{ fontSize: '.72rem', textTransform: 'uppercase', color: 'var(--gold)', fontWeight: 700, display: 'block' }}>Kampala Office</span>
-              <strong style={{ fontSize: '.92rem', color: 'var(--dark)', display: 'block', marginTop: '4px' }}>Acacia Mall, Kisementi, Kampala, Uganda</strong>
+              <span style={{ fontSize: '.72rem', textTransform: 'uppercase', color: 'var(--gold)', fontWeight: 700, display: 'block' }}>Kampala Office · Reg: 80020000702132</span>
+              <strong style={{ fontSize: '.92rem', color: 'var(--dark)', display: 'block', marginTop: '4px' }}>Lubowa, Kampala, Uganda</strong>
               <div style={{ marginTop: '10px', fontSize: '.84rem' }}>
-                <a href="tel:+256709970859" style={{ color: 'var(--dark)', textDecoration: 'none', fontWeight: 600 }}>📞 +256 709 970 859</a>
+                <a href="https://wa.me/256754681378" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--dark)', textDecoration: 'none', fontWeight: 600 }}>📞 +256 754 681378</a>
               </div>
             </div>
 

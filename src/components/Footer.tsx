@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { OrangeInvestmentsLogo } from './OrangeInvestmentsLogo';
 
 interface FooterProps {
   onOpenQuoteModal: () => void;
@@ -15,31 +16,27 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuoteModal }) => {
         <div className="gb-footer__grid">
           {/* Brand Column */}
           <div>
-            <img
-              className="gb-footer__logo"
-              src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/cropped-logoz-80x61.png"
-              alt="Gold Bar Suppliers Africa Ltd"
-              onError={(e) => {
-                e.currentTarget.src =
-                  "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='46' viewBox='0 0 60 46'%3E%3Cpolygon points='10,38 20,12 40,12 50,38' fill='%23C5A059' stroke='%238A6D2B' stroke-width='1.5'/%3E%3Ctext x='30' y='30' font-family='serif' font-size='10' font-weight='bold' fill='%23241A06' text-anchor='middle'%3EGBS%3C/text%3E%3C/svg%3E";
-              }}
-            />
-            <div className="gb-footer__tagline">Africa's Most Trusted Gold Supplier</div>
+            <div className="mb-3">
+              <OrangeInvestmentsLogo variant="light" showTagline={true} />
+            </div>
+            <div className="gb-footer__tagline">Lubowa, Kampala, Uganda · Reg. No: 80020000702132</div>
             <p className="gb-footer__brand-desc">
-              Gold Bar Suppliers Africa Ltd connects serious investors and
+              Orange Investments Company Limited connects serious investors and
               businesses worldwide with certified 24K, 22K, and 18K gold bars,
               nuggets, and dore — sourced directly from Africa's richest mines
               with full assay documentation and insured global delivery.
             </p>
             <ul className="gb-footer__badges">
+              <li>✓ Registration No: 80020000702132</li>
+              <li>✓ Location: Lubowa, Kampala, Uganda</li>
               <li>✓ XRF Assay Certified</li>
-              <li>✓ Brinks Insured</li>
-              <li>✓ AML/KYC Compliant</li>
-              <li>✓ OECD Compliant</li>
+              <li>✓ Brinks Insured Global Delivery</li>
+              <li>✓ AML/KYC & OECD Compliant</li>
             </ul>
             <div className="gb-footer__contact">
-              📞 <a href="https://wa.me/256730763340">WhatsApp / Call Us</a><br />
-              ✉ <Link to="/contact">Send an Enquiry</Link><br />
+              📍 Lubowa, Kampala, Uganda<br />
+              📞 <a href="https://wa.me/256754681378" target="_blank" rel="noopener noreferrer">WhatsApp: +256 754 681378</a><br />
+              ✉ <a href="mailto:info@buygold.blog">info@buygold.blog</a><br />
               ⏱ Response within 2 hours · 7 days a week
             </div>
 
@@ -129,7 +126,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuoteModal }) => {
 
         {/* BOTTOM BAR */}
         <div className="gb-footer__bottom">
-          <span>© 2026 Gold Bar Suppliers Africa Ltd. All rights reserved.</span>
+          <span>© 2026 Orange Investments Company Limited. All rights reserved. · Reg. No: 80020000702132 · Lubowa, Kampala, Uganda</span>
           <div className="gb-footer__bottom-links">
             <Link to="/about">About</Link>
             <Link to="/services">Services</Link>
@@ -137,7 +134,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuoteModal }) => {
             <Link to="/contact">Contact</Link>
           </div>
           <p className="gb-footer__disclaimer">
-            Gold Bar Suppliers Africa Ltd is a licensed gold trading company. All transactions are subject to full AML/KYC verification and applicable export regulations.
+            Orange Investments Company Limited (Registration No: 80020000702132) is a licensed precious metals trading company headquartered in Lubowa, Kampala, Uganda. All transactions are subject to full AML/KYC verification and applicable national and international export regulations.
             Gold prices quoted reflect live LBMA spot rates and are subject to change without notice. Past performance of gold prices does not guarantee future results.
             This site does not constitute financial or investment advice.
           </p>

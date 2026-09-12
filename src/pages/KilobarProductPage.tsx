@@ -51,7 +51,7 @@ export const KilobarProductPage: React.FC<KilobarPageProps> = ({ onOpenQuoteModa
               1kg Gold Bars for Sale: Buy 99.99% Pure Gold in Africa
             </h1>
             <p style={{ fontSize: '1.02rem', lineHeight: 1.8, color: 'var(--charcoal)', marginBottom: '20px' }}>
-              At <strong>Gold Bar Suppliers Africa Ltd</strong>, we supply certified, investment-grade <strong>1 kilogram gold bars</strong> directly from Africa's richest goldfields to institutional buyers and private investors across the USA, UK, UAE, Europe, and Asia.
+              At <strong>Orange Investments Company Limited</strong>, we supply certified, investment-grade <strong>1 kilogram gold bars</strong> directly from Africa's richest goldfields to institutional buyers and private investors across the USA, UK, UAE, Europe, and Asia.
             </p>
 
             {/* Quick stats badges */}
@@ -78,14 +78,14 @@ export const KilobarProductPage: React.FC<KilobarPageProps> = ({ onOpenQuoteModa
                 Request Proforma / SCO for 1kg Bars →
               </button>
               <a
-                href="https://wa.me/256709970859"
+                href="https://wa.me/256754681378"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}
               >
                 <Phone className="w-4 h-4 text-emerald-600" />
-                <span>WhatsApp: +256 709 970 859</span>
+                <span>WhatsApp: +256 754 681378</span>
               </a>
             </div>
           </div>
@@ -206,7 +206,7 @@ export const KilobarProductPage: React.FC<KilobarPageProps> = ({ onOpenQuoteModa
             Our 1kg Gold Bar — Full Specifications
           </h2>
           <p style={{ fontSize: '1rem', lineHeight: 1.8, color: 'var(--charcoal)', marginBottom: '24px' }}>
-            At <strong>Gold Bar Suppliers Africa Ltd</strong>, we supply only investment-grade 1 kilogram gold bars that meet or exceed LBMA (London Bullion Market Association) Good Delivery standards:
+            At <strong>Orange Investments Company Limited</strong>, we supply only investment-grade 1 kilogram gold bars that meet or exceed LBMA (London Bullion Market Association) Good Delivery standards:
           </p>
 
           <div style={{ overflowX: 'auto' }}>

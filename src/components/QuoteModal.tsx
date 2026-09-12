@@ -54,14 +54,14 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
 
   const generateWhatsAppUrl = () => {
     const text = encodeURIComponent(
-      `Hello Gold Bar Suppliers Ltd, I have requested Soft Corporate Offer (SCO) Ref: ${scoReference}.\n` +
+      `Hello Orange Investments Company Limited, I have requested Soft Corporate Offer (SCO) Ref: ${scoReference}.\n` +
       `Name: ${fullName}\n` +
       `Product: ${productData.name}\n` +
       `Quantity: ${quantityKg} Kilograms\n` +
       `Delivery: ${deliveryTerm} (${deliveryTerm === 'CIF' ? destinationAirport : 'Kampala/Entebbe Vault'})\n` +
       `Estimated Total: $${grandTotalUsd.toLocaleString(undefined, { maximumFractionDigits: 0 })} USD`
     );
-    return `https://wa.me/256730763340?text=${text}`;
+    return `https://wa.me/256754681378?text=${text}`;
   };
 
   return (
