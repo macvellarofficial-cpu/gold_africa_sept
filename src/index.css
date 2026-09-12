@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 :root {
+  --bg: #1A1200;
   --gold: #C9962B;
   --gold-lt: #E8C060;
   --gold-pale: #FBF4E4;
@@ -322,6 +323,7 @@ nav.gbs-nav a:hover::after, nav.gbs-nav a.active::after { transform: scaleX(1); 
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: border-color .2s ease;
 }
 .gbs-burger span,
 .gbs-burger span::before,
@@ -332,10 +334,24 @@ nav.gbs-nav a:hover::after, nav.gbs-nav a.active::after { transform: scaleX(1); 
   height: 1.5px;
   background: var(--text);
   position: relative;
-  transition: all .2s ease;
+  transition: all .25s ease;
 }
 .gbs-burger span::before { position: absolute; top: -6px; }
 .gbs-burger span::after { position: absolute; top: 6px; }
+
+.gbs-burger[aria-expanded="true"] span {
+  background: transparent;
+}
+.gbs-burger[aria-expanded="true"] span::before {
+  top: 0;
+  transform: rotate(45deg);
+  background: var(--gold-lt);
+}
+.gbs-burger[aria-expanded="true"] span::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background: var(--gold-lt);
+}
 
 @media (max-width: 1024px) {
   .gbs-topbar { display: none; }
@@ -344,26 +360,57 @@ nav.gbs-nav a:hover::after, nav.gbs-nav a.active::after { transform: scaleX(1); 
     position: absolute;
     top: 100%;
     left: 0; right: 0;
-    background: var(--bg);
-    border-bottom: 1px solid var(--border);
+    background: #1A1200;
+    border-bottom: 2px solid var(--gold);
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
-    padding: 8px 24px 16px;
+    padding: 10px 24px 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.85);
+    z-index: 1000;
+    max-height: calc(100vh - 75px);
+    overflow-y: auto;
   }
-  nav.gbs-nav.is-open { display: flex; }
+  nav.gbs-nav.is-open {
+    display: flex;
+    animation: fadeInSlide .2s ease forwards;
+  }
+  @keyframes fadeInSlide {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
   nav.gbs-nav a {
     width: 100%;
-    padding: 12px 0;
+    padding: 13px 0;
     border-bottom: 1px solid rgba(249,240,200,0.08);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--cream);
+    letter-spacing: .02em;
+    transition: color .15s ease, padding-left .15s ease;
+  }
+  nav.gbs-nav a:hover, nav.gbs-nav a.active {
+    color: var(--gold-lt);
+    padding-left: 6px;
   }
   nav.gbs-nav a::after { display: none; }
   .gbs-price { display: none; }
   .gbs-burger { display: flex; }
-  .gbs-main { position: relative; padding: 14px 20px; }
+  .gbs-main { position: relative; padding: 12px 20px; }
   .gbs-logo-text .tag { display: none; }
   .gbs-actions { gap: 12px; }
   .gbs-cta { padding: 9px 16px; font-size: 13px; }
+}
+
+@media (max-width: 480px) {
+  .gbs-main { padding: 10px 14px; gap: 8px; }
+  .gbs-cta { padding: 8px 12px; font-size: 12px; letter-spacing: 0; }
+  .gbs-burger { width: 36px; height: 36px; }
+  .wpcf7-form input:not([type="submit"]),
+  .wpcf7-form select,
+  .wpcf7-form textarea {
+    font-size: 16px !important;
+  }
 }
 
 /* ── HERO ── */

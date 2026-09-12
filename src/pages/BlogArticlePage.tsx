@@ -28,14 +28,41 @@ export const BlogArticlePage: React.FC<BlogArticlePageProps> = ({ onOpenQuoteMod
     }));
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email) return;
-    setFormSubmitted(true);
-    setTimeout(() => {
-      setFormSubmitted(false);
-      setFormData({ name: '', email: '', phone: '', message: '' });
-    }, 6000);
+    setIsSubmitting(true);
+
+    try {
+      await fetch('https://formsubmit.co/ajax/info@goldafric.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || 'Not provided',
+          message: formData.message || 'Article sidebar inquiry',
+          article_page: article.title,
+          _subject: `🔔 Gold Africa Blog Lead: ${formData.name} (${article.title})`,
+          _template: 'table',
+          _captcha: 'false'
+        })
+      });
+    } catch (err) {
+      console.warn('Blog lead submit error:', err);
+    } finally {
+      setIsSubmitting(false);
+      setFormSubmitted(true);
+      setTimeout(() => {
+        setFormSubmitted(false);
+        setFormData({ name: '', email: '', phone: '', message: '' });
+      }, 6000);
+    }
   };
 
   return (
@@ -326,9 +353,10 @@ export const BlogArticlePage: React.FC<BlogArticlePageProps> = ({ onOpenQuoteMod
 
                   <button
                     type="submit"
-                    className="w-full py-2.5 px-4 bg-[#C5A059] hover:bg-[#B38D45] text-white font-bold text-sm rounded shadow transition transform active:scale-98"
+                    disabled={isSubmitting}
+                    className="w-full py-2.5 px-4 bg-[#C5A059] hover:bg-[#B38D45] text-white font-bold text-sm rounded shadow transition transform active:scale-98 disabled:opacity-75 cursor-pointer"
                   >
-                    Submit Inquiry →
+                    {isSubmitting ? 'Transmitting to Trading Desk...' : 'Submit Inquiry →'}
                   </button>
                   <p className="text-[11px] text-[#8C7D60] text-center italic">
                     Strict AML/KYC protocols apply. Confidential & insured handling.

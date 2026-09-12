@@ -17,13 +17,36 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
+
+    try {
+      await fetch('https://formsubmit.co/ajax/info@goldafric.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          country,
+          product,
+          target_weight_quantity: weight || 'Not specified',
+          message: message || 'No additional message',
+          _subject: `🔔 Gold Africa Inquiry: ${name} (${product})`,
+          _template: 'table',
+          _captcha: 'false'
+        })
+      });
+    } catch (err) {
+      console.warn('Contact form dispatch error:', err);
+    } finally {
       setIsSubmitting(false);
       setSubmitted(true);
-    }, 600);
+    }
   };
 
   return (
@@ -163,20 +186,30 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
                 />
               </form>
             ) : (
-              <div style={{ padding: '24px', background: '#eaf5ee', border: '1.5px solid #2E6044', borderRadius: '8px', color: '#1A3D28' }}>
-                <h3 style={{ margin: '0 0 8px', fontSize: '1.2rem', fontWeight: 700 }}>
-                  ✓ Enquiry Successfully Received
+              <div style={{ padding: '28px', background: '#1A140A', border: '1.5px solid #C59B27', borderRadius: '12px', color: '#FAF7F2' }}>
+                <h3 style={{ margin: '0 0 8px', fontSize: '1.25rem', fontWeight: 700, color: '#DFB845' }}>
+                  ✓ Enquiry Successfully Transmitted to Trading Desk
                 </h3>
-                <p style={{ margin: 0, fontSize: '.92rem', lineHeight: 1.6 }}>
-                  Thank you, <strong>{name}</strong>. Your enquiry regarding <strong>{product}</strong> has been assigned to our trade desk. We will email your itemised proforma to <strong>{email}</strong> within 2 hours.
+                <p style={{ margin: '0 0 16px', fontSize: '.92rem', lineHeight: 1.6, color: '#EDE8E1' }}>
+                  Thank you, <strong>{name}</strong>. Your inquiry for <strong>{product}</strong> has been logged to <strong>info@goldafric.com</strong>. A bullion trade officer will review your requirements and respond to <strong>{email}</strong> within 2 hours.
                 </p>
-                <button
-                  type="button"
-                  onClick={() => setSubmitted(false)}
-                  style={{ marginTop: '16px', background: 'transparent', border: '1px solid #2E6044', color: '#2E6044', padding: '6px 14px', borderRadius: '4px', cursor: 'pointer', fontSize: '.85rem' }}
-                >
-                  Send another message
-                </button>
+                <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '16px' }}>
+                  <a
+                    href={`https://wa.me/256754681378?text=${encodeURIComponent(`Hello Gold Africa, I just submitted an inquiry for ${product} on your website. My name is ${name}.`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ background: '#25D366', color: '#000', padding: '10px 18px', borderRadius: '6px', fontWeight: 700, fontSize: '.85rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                  >
+                    💬 Connect on WhatsApp Now
+                  </a>
+                  <button
+                    type="button"
+                    onClick={() => setSubmitted(false)}
+                    style={{ background: 'transparent', border: '1px solid #C59B27', color: '#DFB845', padding: '10px 16px', borderRadius: '6px', cursor: 'pointer', fontSize: '.85rem', fontWeight: 600 }}
+                  >
+                    Send Another Inquiry
+                  </button>
+                </div>
               </div>
             )}
           </div>

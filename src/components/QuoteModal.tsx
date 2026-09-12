@@ -25,6 +25,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
   const [phone, setPhone] = useState('');
   const [notes, setNotes] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmittingQuote, setIsSubmittingQuote] = useState(false);
   const [scoReference, setScoReference] = useState('');
 
   useEffect(() => {
@@ -45,11 +46,42 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
   const insurance = deliveryTerm === 'CIF' ? baseMetalPrice * (LIVE_SPOT_DATA.insuranceRatePct / 100) : 0;
   const grandTotalUsd = baseMetalPrice + premiumTotal + brinksFreight + insurance;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmittingQuote(true);
     const refNum = `SCO-UG-${Math.floor(100000 + Math.random() * 900000)}`;
     setScoReference(refNum);
-    setIsSubmitted(true);
+
+    try {
+      await fetch('https://formsubmit.co/ajax/info@goldafric.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          sco_reference: refNum,
+          name: fullName,
+          company: companyName || 'Private Investor',
+          email,
+          phone,
+          product: productData.name,
+          quantity_kg: quantityKg,
+          delivery_term: deliveryTerm,
+          destination_airport: deliveryTerm === 'CIF' ? destinationAirport : 'FOB Kampala/Entebbe Vault',
+          estimated_total_usd: `$${grandTotalUsd.toLocaleString(undefined, { maximumFractionDigits: 0 })} USD`,
+          notes: notes || 'None provided',
+          _subject: `🔔 New SCO Quote [${refNum}]: ${fullName} (${quantityKg}kg ${productData.name})`,
+          _template: 'table',
+          _captcha: 'false'
+        })
+      });
+    } catch (err) {
+      console.warn('SCO quote email dispatch error:', err);
+    } finally {
+      setIsSubmittingQuote(false);
+      setIsSubmitted(true);
+    }
   };
 
   const generateWhatsAppUrl = () => {
@@ -298,9 +330,10 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-3.5 bg-gradient-to-r from-[#DFB845] via-[#C59B27] to-[#A37E19] text-[#15120E] font-bold text-sm tracking-wider uppercase rounded-xl shadow-gold-glow hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2"
+                  disabled={isSubmittingQuote}
+                  className="w-full py-3.5 bg-gradient-to-r from-[#DFB845] via-[#C59B27] to-[#A37E19] text-[#15120E] font-bold text-sm tracking-wider uppercase rounded-xl shadow-gold-glow hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-75 cursor-pointer"
                 >
-                  <span>Generate Official Soft Corporate Offer</span>
+                  <span>{isSubmittingQuote ? 'Submitting to Trading Desk...' : 'Generate Official Soft Corporate Offer'}</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
                 <p className="text-[11px] text-[#73654A] text-center mt-2 flex items-center justify-center gap-1.5">

@@ -33,7 +33,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuoteModal }) => {
       {/* ── MAIN NAV BAR ── */}
       <div className="gbs-main">
         <Link to="/" className="gbs-logo" aria-label="Gold Africa — home">
-          <GoldAfricaLogo variant="dark" height={44} />
+          <GoldAfricaLogo variant="light" height={42} />
         </Link>
 
         <button
@@ -44,6 +44,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuoteModal }) => {
         >
           <span></span>
         </button>
+
+        {isOpen && (
+          <div
+            className="fixed inset-0 bg-black/70 backdrop-blur-xs z-[990] lg:hidden"
+            style={{ top: '70px' }}
+            onClick={() => setIsOpen(false)}
+            aria-hidden="true"
+          />
+        )}
 
         <nav className={`gbs-nav ${isOpen ? 'is-open' : ''}`}>
           <Link
