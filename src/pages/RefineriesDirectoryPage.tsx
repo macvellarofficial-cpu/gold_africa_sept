@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { SEO } from '../components/SEO';
+import { generateBreadcrumbSchema } from '../utils/schemaGenerator';
 
 interface RefineriesDirectoryPageProps {
   onOpenQuoteModal: (productSlug?: string) => void;
@@ -18,8 +20,21 @@ export const RefineriesDirectoryPage: React.FC<RefineriesDirectoryPageProps> = (
     setTimeout(() => setSent(false), 5000);
   };
 
+  const breadcrumbs = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'African Gold Refinery Uganda', url: '/african-gold-refinery' },
+  ]);
+
   return (
     <div className="section s-white" style={{ paddingTop: '40px', paddingBottom: '80px' }}>
+      <SEO
+        title="Licensed Gold Refineries in Uganda | 2026 Directory & Guide"
+        description="Comprehensive guide to accredited gold refineries in Uganda and East Africa including African Gold Refinery (AGR Entebbe), Simba Gold, and Victoria Gold Star. Refining capacity, assay labs, and licensing details."
+        canonical="/african-gold-refinery"
+        keywords="african gold refinery, gold refineries in uganda, list of gold refineries in uganda, entebbe gold refinery, gold assay lab kampala, agr uganda, refined gold uganda"
+        ogType="article"
+        schema={breadcrumbs}
+      />
       <div className="wrap">
         {/* Breadcrumb */}
         <div style={{ fontSize: '.82rem', color: 'var(--stone)', marginBottom: '24px' }}>

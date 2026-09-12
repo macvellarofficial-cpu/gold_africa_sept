@@ -1,14 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Phone, CheckCircle2 } from 'lucide-react';
+import { SEO } from '../components/SEO';
+import { generateBreadcrumbSchema } from '../utils/schemaGenerator';
 
 interface UgandaGoldGuideProps {
   onOpenQuoteModal: (productSlug?: string) => void;
 }
 
 export const UgandaGoldGuidePage: React.FC<UgandaGoldGuideProps> = ({ onOpenQuoteModal }) => {
+  const breadcrumbs = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: '1 Bar of Gold Price in Uganda (Updated Guide)', url: '/1-bar-of-gold-price-in-uganda' },
+  ]);
+
   return (
     <div className="section s-white" style={{ paddingTop: '40px', paddingBottom: '80px' }}>
+      <SEO
+        title="1 Bar of Gold Price in Uganda Today | 2026 Updated Rates & Buyer Guide"
+        description="Comprehensive 2026 guide to gold bar prices in Uganda. Real-time rates for 1kg kilobars, 24K pure bullion, refinery smelting, export tax regulations, and how to buy safely in Kampala."
+        canonical="/1-bar-of-gold-price-in-uganda"
+        keywords="1 bar of gold price in uganda, how to buy gold in uganda, gold price today uganda, gold bars for sale in uganda, gold refineries in kampala, uganda gold export permit, gold trading uganda"
+        ogType="article"
+        schema={breadcrumbs}
+      />
       <div className="wrap">
         {/* Breadcrumb */}
         <div style={{ fontSize: '.82rem', color: 'var(--stone)', marginBottom: '24px' }}>

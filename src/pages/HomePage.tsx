@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SafeImage } from '../components/SafeImage';
+import { SEO } from '../components/SEO';
+import { generateOrganizationSchema, generateWebSiteSchema, generateFAQSchema } from '../utils/schemaGenerator';
+import { FAQ_ITEMS } from '../data/goldData';
 
 interface HomePageProps {
   onOpenQuoteModal: (productSlug?: string) => void;
@@ -18,8 +21,24 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
     setQuoteSent(true);
   };
 
+  const homeSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      generateOrganizationSchema(),
+      generateWebSiteSchema(),
+      generateFAQSchema(FAQ_ITEMS.slice(0, 4)),
+    ],
+  };
+
   return (
     <div>
+      <SEO
+        title="Gold Africa | Buy 24K Gold Bars, Doré & Bullion Direct from Africa"
+        description="Gold Africa (Reg: 80020000702132) connects serious international investors with certified 24K pure gold bars, unrefined doré, and bullion direct from African mines with live LBMA pricing, SGS assays, and Brinks insured delivery."
+        canonical="/"
+        keywords="buy gold in africa, african gold bullion, uganda gold exporters, kampala gold refinery, gold trading companies in africa, raw gold dore bars uganda, 24k gold bars for sale, buy gold direct from mine africa, gold export permits uganda, lbma gold bars africa, 1kg gold bar price, brinks insured gold shipping"
+        schema={homeSchema}
+      />
       {/* ════════════════════════════════
            HERO
       ════════════════════════════════ */}

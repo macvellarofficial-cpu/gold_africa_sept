@@ -1,13 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/SEO';
+import { generateBreadcrumbSchema } from '../utils/schemaGenerator';
 
 interface ServicesPageProps {
   onOpenQuoteModal?: (productSlug?: string) => void;
 }
 
 export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) => {
+  const breadcrumbs = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Gold Services & Export Solutions', url: '/services' },
+  ]);
+
   return (
     <div>
+      <SEO
+        title="Gold Services & Export Solutions | Smelting, Assay & Vaulting"
+        description="Comprehensive physical gold services in Africa: 24K bullion sales, raw doré smelting, independent SGS fire assay, Entebbe Free Trade Zone vaulting, and insured Brinks air freight worldwide."
+        canonical="/services"
+        keywords="gold services africa, gold smelting uganda, fire assay uganda, bullion vaulting entebbe, brinks gold shipping, gold export documentation, customs clearance uganda"
+        schema={breadcrumbs}
+      />
       {/* ═══════════════════════════════════════
            HERO
       ═══════════════════════════════════════════ */}

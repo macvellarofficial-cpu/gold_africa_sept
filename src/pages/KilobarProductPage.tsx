@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Award, ShieldCheck, CheckCircle2, ArrowRight, Phone, Calculator, Lock } from 'lucide-react';
-import { LIVE_SPOT_DATA } from '../data/goldData';
+import { LIVE_SPOT_DATA, PRODUCTS } from '../data/goldData';
 import { SafeImage } from '../components/SafeImage';
+import { SEO } from '../components/SEO';
+import { generateProductSchema, generateBreadcrumbSchema } from '../utils/schemaGenerator';
 
 interface KilobarPageProps {
   onOpenQuoteModal: (productSlug?: string) => void;
@@ -31,8 +33,30 @@ export const KilobarProductPage: React.FC<KilobarPageProps> = ({ onOpenQuoteModa
     setTimeout(() => setSubmitted(false), 5000);
   };
 
+  const kilobarProd = PRODUCTS.find((p) => p.slug === '1kg-gold-bars-for-sale') || PRODUCTS[1];
+  const kilobarSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      generateProductSchema(kilobarProd),
+      generateBreadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'Gold Bars for Sale', url: '/gold-bars-for-sale' },
+        { name: '1kg Gold Bar (Kilobar)', url: '/1kg-gold-bars-for-sale' },
+      ]),
+    ],
+  };
+
   return (
     <div className="section s-white" style={{ paddingTop: '40px', paddingBottom: '80px' }}>
+      <SEO
+        title="1kg Gold Bar (Kilobar) for Sale | 24K 999.9 Fine Gold"
+        description="Buy investment-grade 1 Kilogram (1000g) 24K pure gold bars direct from African refiners. Lowest markup over LBMA spot, accredited SGS/Bureau Veritas assay certificates, and Brinks insured delivery."
+        canonical="/1kg-gold-bars-for-sale"
+        keywords="1kg gold bar for sale, buy kilobar gold, 24k 1kg gold bar price, buy 1kg gold bar in africa, 1kg gold bar price in south africa, investment gold bars africa, lbma kilobars kampala"
+        ogType="product"
+        ogImage={kilobarProd.image}
+        schema={kilobarSchema}
+      />
       <div className="wrap">
         {/* Breadcrumb */}
         <div style={{ fontSize: '.82rem', color: 'var(--stone)', marginBottom: '24px' }}>

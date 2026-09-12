@@ -1,0 +1,35 @@
+# Robots.txt for Gold Africa (https://www.goldafric.com)
+# Gold Africa Company Limited (Reg. No: 80020000702132)
+# Lubowa, Kampala, Uganda · Official Bullion Trading Platform
+
+User-agent: *
+Allow: /
+
+# Primary Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Canonical Host & Sitemap Directive for Google Search Console
+Host: https://www.goldafric.com
+Sitemap: https://www.goldafric.com/sitemap.xml

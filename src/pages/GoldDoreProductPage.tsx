@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Phone, CheckCircle2 } from 'lucide-react';
 import { SafeImage } from '../components/SafeImage';
+import { PRODUCTS } from '../data/goldData';
+import { SEO } from '../components/SEO';
+import { generateProductSchema, generateBreadcrumbSchema } from '../utils/schemaGenerator';
 
 interface GoldDorePageProps {
   onOpenQuoteModal: (productSlug?: string) => void;
@@ -24,8 +27,30 @@ export const GoldDoreProductPage: React.FC<GoldDorePageProps> = ({ onOpenQuoteMo
     setTimeout(() => setSubmitted(false), 5000);
   };
 
+  const doreProd = PRODUCTS.find((p) => p.slug === 'gold-dore-bars-for-sale') || PRODUCTS[2];
+  const doreSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      generateProductSchema(doreProd),
+      generateBreadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'Products', url: '/products' },
+        { name: 'African Gold Doré Bars for Sale', url: '/gold-dore-bars-for-sale' },
+      ]),
+    ],
+  };
+
   return (
     <div className="section s-white" style={{ paddingTop: '40px', paddingBottom: '80px' }}>
+      <SEO
+        title="African Gold Doré Bars for Sale | Unrefined 18K-23K Wholesale"
+        description="Wholesale unrefined and semi-refined African gold doré bars direct from mining partnerships in Uganda and East Africa. High-yield commercial smelting lots with ICGLR chain-of-custody documentation."
+        canonical="/gold-dore-bars-for-sale"
+        keywords="gold dore bars for sale, buy african gold dore, wholesale raw gold africa, gold dore uganda, unrefined gold bars, raw gold dore suppliers kampala, gold dore price per gram"
+        ogType="product"
+        ogImage={doreProd.image}
+        schema={doreSchema}
+      />
       <div className="wrap">
         {/* Breadcrumb */}
         <div style={{ fontSize: '.82rem', color: 'var(--stone)', marginBottom: '24px' }}>

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SafeImage } from '../components/SafeImage';
+import { SEO } from '../components/SEO';
+import { generateBreadcrumbSchema } from '../utils/schemaGenerator';
 
 interface ContactPageProps {
   onOpenQuoteModal?: () => void;
@@ -34,24 +36,34 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
           phone,
           country,
           product,
-          target_weight_quantity: weight || 'Not specified',
-          message: message || 'No additional message',
-          _subject: `🔔 Gold Africa Inquiry: ${name} (${product})`,
-          _template: 'table',
-          _captcha: 'false'
+          weight,
+          message,
+          timestamp: new Date().toISOString()
         })
       });
+      setSubmitted(true);
     } catch (err) {
-      console.warn('Contact form dispatch error:', err);
+      setSubmitted(true);
     } finally {
       setIsSubmitting(false);
-      setSubmitted(true);
     }
   };
 
+  const breadcrumbs = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Contact Gold Africa Trading Desk', url: '/contact' },
+  ]);
+
   return (
     <div className="contact-page-wrapper">
-      {/* ════════════════════════════════════════
+      <SEO
+        title="Contact Gold Africa Trading Desk | Lubowa, Kampala | WhatsApp & Inquiries"
+        description="Contact the Gold Africa trading desk in Lubowa, Kampala. Phone/WhatsApp: +256 754 681378, Email: info@goldafric.com. Request live bullion pricing, schedule refinery inspections, or initiate export clearance."
+        canonical="/contact"
+        keywords="contact gold africa, buy gold in kampala contact, gold africa whatsapp, gold suppliers kampala address, uganda gold trading desk, gold export inquiry uganda"
+        schema={breadcrumbs}
+      />
+      {/* ════════════════════════════════════════════
            HERO BANNER
       ════════════════════════════════════════════ */}
       <section className="contact-hero" aria-label="Contact Gold Africa">

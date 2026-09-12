@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SafeImage } from '../components/SafeImage';
+import { SEO } from '../components/SEO';
+import { generateBreadcrumbSchema } from '../utils/schemaGenerator';
 
 interface ProductsPageProps {
   onOpenQuoteModal?: (productSlug?: string) => void;
@@ -22,8 +24,21 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) 
     setTimeout(() => setFormSent(false), 5000);
   };
 
+  const breadcrumbs = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Gold Bars & Bullion for Sale', url: '/products' },
+  ]);
+
   return (
     <div className="section s-white" style={{ paddingTop: '40px', paddingBottom: '80px' }}>
+      <SEO
+        title="Gold Bars & Bullion for Sale | 24K, 22K & Doré Bars"
+        description="Browse certified 24K pure gold bars, 1kg kilobars, 22K bars, and wholesale gold doré from licensed African refineries. Live LBMA pricing, SGS assay certificates, and Brinks insured worldwide delivery."
+        canonical="/products"
+        keywords="gold bars for sale, buy gold bars africa, 24k gold bullion, 1kg gold bar for sale, african gold dore bars, 22k gold bars, buy gold bullion online, uganda gold suppliers, buy gold in kampala"
+        ogType="product"
+        schema={breadcrumbs}
+      />
       <div className="wrap">
         {/* Breadcrumb */}
         <div style={{ fontSize: '.82rem', color: 'var(--stone)', marginBottom: '24px' }}>

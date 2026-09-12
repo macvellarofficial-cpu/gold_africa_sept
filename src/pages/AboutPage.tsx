@@ -1,13 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/SEO';
+import { generateBreadcrumbSchema, generateOrganizationSchema } from '../utils/schemaGenerator';
 
 interface AboutPageProps {
   onOpenQuoteModal: () => void;
 }
 
 export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
+  const aboutSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      generateOrganizationSchema(),
+      generateBreadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'About Gold Africa', url: '/about' },
+      ]),
+    ],
+  };
+
   return (
     <div className="about-page-wrapper">
+      <SEO
+        title="About Gold Africa | Licensed Precious Metals Trading & Sourcing Firm"
+        description="Gold Africa (Reg: 80020000702132) is Uganda’s most trusted certified precious metals enterprise based in Lubowa, Kampala. Direct partnerships with certified artisanal and industrial mines across Africa."
+        canonical="/about"
+        keywords="about gold africa, uganda gold dealers, licensed gold company kampala, lubowa gold trading, african gold mining partners, conflict free gold sourcing africa"
+        schema={aboutSchema}
+      />
       {/* ══════════════════════════════
            HERO / PAGE OPENER
       ══════════════════════════════════ */}

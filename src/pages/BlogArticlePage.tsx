@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getArticleBySlug, recentArticlesList, regionalGuidesList } from '../data/articlesData';
 import { SafeImage } from '../components/SafeImage';
+import { SEO } from '../components/SEO';
+import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema } from '../utils/schemaGenerator';
 
 interface BlogArticlePageProps {
   onOpenQuoteModal: (slug?: string) => void;
@@ -33,25 +35,25 @@ export const BlogArticlePage: React.FC<BlogArticlePageProps> = ({ onOpenQuoteMod
   const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email) return;
-    setIsSubmitting(true);
 
+    setIsSubmitting(true);
     try {
       await fetch('https://formsubmit.co/ajax/info@goldafric.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json'
+          'Accept': 'application/json',
         },
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
           phone: formData.phone || 'Not provided',
-          message: formData.message || 'Article sidebar inquiry',
-          article_page: article.title,
-          _subject: `🔔 Gold Africa Blog Lead: ${formData.name} (${article.title})`,
+          article_context: article.title,
+          message: formData.message || 'Requested gold quotation via article sidebar',
+          _subject: `🔔 New Quote Lead from Article: ${article.title.slice(0, 40)}`,
           _template: 'table',
-          _captcha: 'false'
-        })
+          _captcha: 'false',
+        }),
       });
     } catch (err) {
       console.warn('Blog lead submit error:', err);
@@ -65,8 +67,36 @@ export const BlogArticlePage: React.FC<BlogArticlePageProps> = ({ onOpenQuoteMod
     }
   };
 
+  const schemas: any[] = [
+    generateArticleSchema(article),
+    generateBreadcrumbSchema([
+      { name: 'Home', url: '/' },
+      { name: article.category, url: '/products' },
+      { name: article.title, url: `/${article.slug}` },
+    ]),
+  ];
+
+  if (article.faqs && article.faqs.length > 0) {
+    schemas.push(generateFAQSchema(article.faqs));
+  }
+
+  const combinedSchema = {
+    '@context': 'https://schema.org',
+    '@graph': schemas,
+  };
+
   return (
     <div className="bg-[#FAF7F0] min-h-screen py-8 text-[#2C2410]">
+      <SEO
+        title={`${article.title} | Gold Africa`}
+        description={article.metaDescription}
+        canonical={`/${article.slug}`}
+        keywords={`buy gold in africa, ${article.category.toLowerCase()}, ${article.title.toLowerCase()}, gold trading africa, gold bars africa`}
+        ogType="article"
+        ogImage={article.featuredImage}
+        author={article.author || 'Gold Africa'}
+        schema={combinedSchema}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* BREADCRUMBS */}
