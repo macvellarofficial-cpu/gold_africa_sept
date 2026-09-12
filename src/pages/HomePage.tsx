@@ -948,7 +948,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px' }} className="intl-grid">
+          <div className="intl-grid">
             <Link to="/buying-gold-online-in-the-usa" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
               <div style={{ fontSize: '1.8rem', marginBottom: '8px' }}>🇺🇸</div>
               <strong style={{ display: 'block', fontSize: '.88rem', color: 'var(--dark)', fontWeight: 700, marginBottom: '3px' }}>United States</strong>

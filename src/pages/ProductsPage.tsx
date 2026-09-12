@@ -48,10 +48,10 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) 
         </div>
 
         {/* 2-Column Content Layout (Content + Sidebar) */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: '48px', alignItems: 'start' }} className="content-sidebar-layout">
+        <div className="content-sidebar-layout">
           {/* Main Article Content */}
-          <main style={{ minWidth: 0 }}>
-            <h1 style={{ fontFamily: 'Playfair Display, serif', fontSize: 'clamp(2rem, 3.5vw, 2.7rem)', color: 'var(--dark)', lineHeight: 1.2, marginBottom: '20px' }}>
+          <main className="w-full min-w-0 max-w-full">
+            <h1 style={{ fontFamily: 'Playfair Display, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.7rem)', color: 'var(--dark)', lineHeight: 1.2, marginBottom: '20px' }}>
               <b>Gold Bars for Sale | Buy 24K Gold Bars Online & Near You – Real Bullion & 1 oz Bars</b>
             </h1>
 
@@ -224,7 +224,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) 
               <h2 style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.8rem', color: 'var(--dark)', marginBottom: '20px' }}>
                 Featured Certified Gold Bars
               </h2>
-              <div className="srv-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px' }}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div className="srv-card">
                   <div className="srv-card-img" style={{ height: '160px' }}>
                     <SafeImage
@@ -286,7 +286,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) 
           </main>
 
           {/* Sidebar */}
-          <aside style={{ background: 'var(--fog)', padding: '28px', borderRadius: 'var(--r-lg)', border: '1px solid var(--border)' }}>
+          <aside className="w-full lg:w-[340px] bg-[var(--fog)] p-5 sm:p-7 rounded-[var(--r-lg)] border border-[var(--border)] box-border">
             <h2 style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.4rem', color: 'var(--dark)', marginBottom: '18px', paddingBottom: '10px', borderBottom: '2px solid var(--gold)' }}>
               Request a Quote!
             </h2>

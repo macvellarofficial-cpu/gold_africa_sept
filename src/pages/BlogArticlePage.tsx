@@ -109,10 +109,10 @@ export const BlogArticlePage: React.FC<BlogArticlePageProps> = ({ onOpenQuoteMod
         </nav>
 
         {/* TWO-COLUMN LAYOUT MATCHING USER SCREENSHOTS */}
-        <div className="flex flex-col lg:flex-row gap-8 items-start">
+        <div className="flex flex-col lg:flex-row gap-8 items-start w-full max-w-full">
           
           {/* LEFT MAIN ARTICLE COLUMN (70%) */}
-          <article className="w-full lg:w-[70%] bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-sm border border-[#E8DFC8]">
+          <article className="w-full lg:w-[70%] min-w-0 max-w-full bg-white p-4 sm:p-8 md:p-10 rounded-lg shadow-sm border border-[#E8DFC8] break-words">
             
             {/* ARTICLE HEADER */}
             <header className="mb-6">
@@ -306,7 +306,7 @@ export const BlogArticlePage: React.FC<BlogArticlePageProps> = ({ onOpenQuoteMod
           </article>
 
           {/* RIGHT SIDEBAR COLUMN (30%) - EXACT REPLICATION OF LIVE ASTRA THEME */}
-          <aside className="w-full lg:w-[30%] space-y-6">
+          <aside className="w-full lg:w-[30%] min-w-0 max-w-full space-y-6 lg:sticky lg:top-24">
             
             {/* WIDGET 1: REQUEST A QUOTE FORM */}
             <div className="bg-white p-6 rounded-lg shadow-sm border border-[#E8DFC8]">

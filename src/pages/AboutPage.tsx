@@ -252,7 +252,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
       ══════════════════════════════════ */}
       <section className="section s-dark" aria-labelledby="mission-title">
         <div className="wrap">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }} className="split">
+          <div className="split">
             <div>
               <div className="eyebrow" style={{ color: 'var(--gold-lt)' }}>Our Mission</div>
               <h2 className="h2 h2-w" id="mission-title">
@@ -264,7 +264,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
               <p style={{ fontSize: '.9rem', color: 'rgba(255,255,255,.55)', lineHeight: 1.78, marginBottom: '28px' }}>
                 For too long, international buyers have paid 6–11% retail premiums to access African gold through Western distribution chains. For too long, they have been burned by unverified dealers, missing documentation, and customs complications. Gold Africa exists to solve all three problems simultaneously — with direct mine access, independent assay, and bankable compliance documentation as standard features of every transaction, not optional add-ons.
               </p>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div style={{ background: 'rgba(255,255,255,.06)', border: '1px solid rgba(255,255,255,.1)', borderRadius: 'var(--r-md)', padding: '18px' }}>
                   <strong style={{ fontFamily: "'Playfair Display',serif", fontSize: '1.4rem', color: 'var(--gold-lt)', display: 'block', marginBottom: '4px' }}>
                     $139.39
@@ -363,7 +363,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
             </Link>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '14px', marginTop: '16px' }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 mt-4">
             <Link
               to="/18k-gold-bars-for-sale"
               style={{ padding: '18px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', transition: 'all .2s', background: 'var(--white)' }}

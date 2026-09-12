@@ -43,9 +43,9 @@ export const RefineriesDirectoryPage: React.FC<RefineriesDirectoryPageProps> = (
           <span>African Gold Refinery (AGR Uganda)</span>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: '48px', alignItems: 'start' }} className="content-sidebar-layout">
-          <main style={{ minWidth: 0 }}>
-            <h1 style={{ fontFamily: 'Playfair Display, serif', fontSize: 'clamp(2rem, 3.5vw, 2.7rem)', color: 'var(--dark)', lineHeight: 1.2, marginBottom: '20px' }}>
+        <div className="content-sidebar-layout">
+          <main className="w-full min-w-0 max-w-full">
+            <h1 style={{ fontFamily: 'Playfair Display, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.7rem)', color: 'var(--dark)', lineHeight: 1.2, marginBottom: '20px' }}>
               <b>African Gold Refinery Uganda: An Ultimate Guide 2026</b>
             </h1>
 
@@ -96,7 +96,7 @@ export const RefineriesDirectoryPage: React.FC<RefineriesDirectoryPageProps> = (
           </main>
 
           {/* Sidebar */}
-          <aside style={{ background: 'var(--fog)', padding: '28px', borderRadius: 'var(--r-lg)', border: '1px solid var(--border)' }}>
+          <aside className="w-full lg:w-[340px] bg-[var(--fog)] p-5 sm:p-7 rounded-[var(--r-lg)] border border-[var(--border)] box-border">
             <h2 style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.4rem', color: 'var(--dark)', marginBottom: '18px', paddingBottom: '10px', borderBottom: '2px solid var(--gold)' }}>
               Refinery Inquiries
             </h2>

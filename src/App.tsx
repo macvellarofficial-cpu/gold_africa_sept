@@ -48,12 +48,12 @@ export const App: React.FC = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col bg-white text-[#2C2410] antialiased">
+      <div className="min-h-screen w-full max-w-full overflow-x-hidden flex flex-col bg-white text-[#2C2410] antialiased relative">
         {/* Live Site Header */}
         <Navbar onOpenQuoteModal={() => handleOpenQuoteModal()} />
 
         {/* Dynamic Pages */}
-        <main className="flex-grow">
+        <main className="flex-grow w-full max-w-full overflow-x-hidden">
           <Routes>
             <Route path="/" element={<HomePage onOpenQuoteModal={handleOpenQuoteModal} />} />
             

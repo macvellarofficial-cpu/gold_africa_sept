@@ -68,7 +68,7 @@ export const KilobarProductPage: React.FC<KilobarPageProps> = ({ onOpenQuoteModa
         </div>
 
         {/* 2-Column Product Header */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center', marginBottom: '64px' }} className="fsplit">
+        <div className="fsplit" style={{ marginBottom: '64px' }}>
           <div>
             <div className="eyebrow">Institutional Investment Tier · 999.9 Fineness</div>
             <h1 style={{ fontFamily: 'Playfair Display, serif', fontSize: 'clamp(2.2rem, 4vw, 3.2rem)', color: 'var(--dark)', lineHeight: 1.15, margin: '12px 0 16px' }}>
@@ -79,7 +79,7 @@ export const KilobarProductPage: React.FC<KilobarPageProps> = ({ onOpenQuoteModa
             </p>
 
             {/* Quick stats badges */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px', marginBottom: '24px' }}>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
               <div style={{ background: 'var(--fog)', padding: '12px 14px', borderRadius: 'var(--r-md)', border: '1px solid var(--border)' }}>
                 <span style={{ fontSize: '.68rem', textTransform: 'uppercase', color: 'var(--stone)', display: 'block' }}>Gross Weight</span>
                 <strong style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.1rem', color: 'var(--dark)' }}>1,000.00g</strong>
@@ -180,7 +180,7 @@ export const KilobarProductPage: React.FC<KilobarPageProps> = ({ onOpenQuoteModa
             </div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '20px', alignItems: 'center' }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-center">
             <div>
               <label style={{ fontSize: '.78rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--stone)', display: 'block', marginBottom: '8px' }}>
                 Select Allocation (Kilograms): <strong>{allocationKg} kg ({allocationKg * 32.15} oz)</strong>
@@ -288,7 +288,7 @@ export const KilobarProductPage: React.FC<KilobarPageProps> = ({ onOpenQuoteModa
         </div>
 
         {/* ── SOURCING & PROVENANCE ── */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center', marginBottom: '64px' }} className="fsplit">
+        <div className="fsplit" style={{ marginBottom: '64px' }}>
           <div style={{ borderRadius: 'var(--r-xl)', overflow: 'hidden', border: '1px solid var(--border)' }}>
             <SafeImage
               src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/buygold.jpeg"

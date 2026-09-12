@@ -458,7 +458,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
           </div>
 
           {/* Address cards below map */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '20px', marginTop: '28px' }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-7">
             <div style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: 'var(--r-md)', padding: '20px', display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
               <span style={{ fontSize: '1.4rem', flexShrink: 0 }}>📍</span>
               <div>
