@@ -59,7 +59,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) 
             </div>
 
             <p style={{ fontSize: '1rem', lineHeight: 1.8, color: 'var(--charcoal)', marginBottom: '16px' }}>
-              At Orange Investments Company Limited, we specialize in providing authentic <Link to="/gold-bars-for-sale" style={{ color: 'var(--gold)', fontWeight: 600 }}>24K gold bars</Link> for sale, ranging from affordable 1 gram gold bars to institutional-grade 400 oz gold bar for sale options.
+              At Gold Africa, we specialize in providing authentic <Link to="/gold-bars-for-sale" style={{ color: 'var(--gold)', fontWeight: 600 }}>24K gold bars</Link> for sale, ranging from affordable 1 gram gold bars to institutional-grade 400 oz gold bar for sale options.
             </p>
 
             <p style={{ fontSize: '1rem', lineHeight: 1.8, color: 'var(--charcoal)', marginBottom: '16px' }}>
@@ -79,7 +79,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) 
             </p>
 
             <p style={{ fontSize: '1rem', lineHeight: 1.8, color: 'var(--charcoal)', marginBottom: '16px' }}>
-              At Orange Investments Company Limited, we pride ourselves on transparency, certification, and customer satisfaction. Our gold bars for sale come with assay certificates, hallmarks from recognized refineries, and insured shipping options.
+              At Gold Africa, we pride ourselves on transparency, certification, and customer satisfaction. Our gold bars for sale come with assay certificates, hallmarks from recognized refineries, and insured shipping options.
             </p>
 
             <p style={{ fontSize: '1rem', lineHeight: 1.8, color: 'var(--charcoal)', marginBottom: '16px' }}>
@@ -96,7 +96,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) 
             </p>
 
             <p style={{ fontSize: '1rem', lineHeight: 1.8, color: 'var(--charcoal)', marginBottom: '24px' }}>
-              At Orange Investments Company Limited, we offer an extensive inventory, including everything from tiny 1 gram gold bars for sale to massive bars of gold for sale used by institutions.
+              At Gold Africa, we offer an extensive inventory, including everything from tiny 1 gram gold bars for sale to massive bars of gold for sale used by institutions.
             </p>
 
             {/* Small Sized Bars */}

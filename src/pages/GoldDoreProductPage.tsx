@@ -118,7 +118,7 @@ export const GoldDoreProductPage: React.FC<GoldDorePageProps> = ({ onOpenQuoteMo
             Origin of Your Gold Doré
           </h3>
           <p style={{ fontSize: '1rem', lineHeight: 1.8, color: 'var(--charcoal)', marginBottom: '16px' }}>
-            Africa produces over 25% of the world's gold. Orange Investments Company Limited sources exclusively from verified, licensed operations across East, West, and Central Africa:
+            Africa produces over 25% of the world's gold. Gold Africa sources exclusively from verified, licensed operations across East, West, and Central Africa:
           </p>
           <ul style={{ paddingLeft: '20px', lineHeight: 2, color: 'var(--charcoal)', marginBottom: '24px' }}>
             <li><strong>Uganda</strong>: Alluvial placer gold from Karamoja, Mubende, and Busia goldfields.</li>

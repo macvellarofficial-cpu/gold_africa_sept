@@ -42,7 +42,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
     slug: 'buy-gold-in-south-africa',
     title: 'Buy Gold Bars in South Africa: Your Trusted Source for 24K Gold Bars',
     subtitle: 'LBMA Certified Bullion, Dore Bars & Direct Rand Refinery Sourcing with Insured Global Vault Delivery',
-    author: 'Orange Investments Company Limited',
+    author: 'Gold Africa',
     date: 'June 18, 2026',
     category: 'African Markets',
     readTime: '8 min read',
@@ -50,13 +50,13 @@ export const articlesDatabase: Record<string, ArticleContent> = {
     secondaryImage: 'https://goldbarsuppliers.com/wp-content/uploads/2025/10/gold-3.webp',
     metaDescription: 'Buy certified 24K gold bars in South Africa. Direct access to Rand Refinery bullion, Krugerrands, and dore bars with XRF assay, export documentation, and Brinks vault shipping.',
     leadParagraph:
-      'Looking to buy gold bars in South Africa? Orange Investments Company Limited is your trusted source for certified 24K, 22K, and 18K gold bullion, dore bars, and nuggets with guaranteed LBMA-compliant purity, transparent pricing, and secure global delivery. South Africa has long been the epicentre of the global gold mining industry, producing over a third of all historical gold mined worldwide and housing the prestigious Rand Refinery in Germiston.',
+      'Looking to buy gold bars in South Africa? Gold Africa is your trusted source for certified 24K, 22K, and 18K gold bullion, dore bars, and nuggets with guaranteed LBMA-compliant purity, transparent pricing, and secure global delivery. South Africa has long been the epicentre of the global gold mining industry, producing over a third of all historical gold mined worldwide and housing the prestigious Rand Refinery in Germiston.',
     sections: [
       {
         heading: 'Why Buy Gold Bars in South Africa?',
         paragraphs: [
           'South Africa remains one of the world’s premier physical bullion hubs. The Witwatersrand Basin has yielded more gold than any geological formation on Earth, creating an institutional trading ecosystem regulated by the South African Reserve Bank (SARB) and the South African Diamond and Precious Metals Regulator (SADPMR).',
-          'Investors purchasing gold through Orange Investments Company Limited benefit from direct proximity to major mining concessions in Gauteng, Free State, and Mpumalanga. By avoiding unnecessary intermediary layers, our clients secure institutional pricing pegged directly to live LBMA spot rates rather than retail markup premiums.',
+          'Investors purchasing gold through Gold Africa benefit from direct proximity to major mining concessions in Gauteng, Free State, and Mpumalanga. By avoiding unnecessary intermediary layers, our clients secure institutional pricing pegged directly to live LBMA spot rates rather than retail markup premiums.',
         ],
         bullets: [
           'Direct access to LBMA Good Delivery refiners, including Rand Refinery accredited bars.',
@@ -70,7 +70,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
       {
         heading: 'Purity & Certification Standards (24K, 22K, 18K)',
         paragraphs: [
-          'When acquiring physical gold in South Africa, verifying assay certification is paramount. Each bar delivered by Orange Investments Company Limited is accompanied by an independent XRF Spectrometer assay certificate and a recognized refinery hallmark stamp.',
+          'When acquiring physical gold in South Africa, verifying assay certification is paramount. Each bar delivered by Gold Africa is accompanied by an independent XRF Spectrometer assay certificate and a recognized refinery hallmark stamp.',
           'For institutional investors, central banks, and wealth preservation funds, 24 Karat (99.99% pure) cast and minted bars are the global standard. For jewellery manufacturers and commercial buyers, 22K (91.67%) and 18K (75.0%) gold dore bars provide superior alloy strength and tailored working properties.',
         ],
       },
@@ -78,7 +78,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
         heading: 'South Africa Gold Export Procedure & Documentation',
         paragraphs: [
           'Exporting physical gold bullion out of South Africa requires adherence to strict exchange control regulations administered by SARB and the South African Revenue Service (SARS) Customs division.',
-          'Orange Investments Company Limited manages the entire export protocol end-to-end on behalf of our international clientele. We coordinate the SADPMR Form B permit, SARS Customs Clearance, independent SGS/Bureau Veritas assay inspection, and commercial documentation.',
+          'Gold Africa manages the entire export protocol end-to-end on behalf of our international clientele. We coordinate the SADPMR Form B permit, SARS Customs Clearance, independent SGS/Bureau Veritas assay inspection, and commercial documentation.',
         ],
         bullets: [
           'SADPMR Non-Standard Gold Export Permit or Precious Metals Licence.',
@@ -117,7 +117,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
       {
         question: 'Can foreign citizens and foreign companies legally buy gold in South Africa?',
         answer:
-          'Yes. Non-resident individuals and international corporations can legally purchase physical gold bullion in South Africa provided all transactions comply with SARB exchange control regulations and are handled by a licensed precious metals dealer such as Orange Investments Company Limited.',
+          'Yes. Non-resident individuals and international corporations can legally purchase physical gold bullion in South Africa provided all transactions comply with SARB exchange control regulations and are handled by a licensed precious metals dealer such as Gold Africa.',
       },
       {
         question: 'How is the price of gold calculated in South Africa?',
@@ -141,7 +141,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
     slug: 'where-to-buy-gold-in-south-sudan',
     title: 'Where to Buy Gold in South Sudan: Safe Sourcing & Trading Guide',
     subtitle: 'Artisanal Mining Concessions, Juba Trading Hubs, Export Licensing & Ministry of Mining Protocols',
-    author: 'Orange Investments Company Limited',
+    author: 'Gold Africa',
     date: 'June 14, 2026',
     category: 'African Markets',
     readTime: '7 min read',
@@ -155,7 +155,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
         heading: 'Gold Mining Regions in South Sudan',
         paragraphs: [
           'The primary source of alluvial and hard-rock gold in South Sudan is the Kapoeta region within Eastern Equatoria State. Artisanal small-scale miners extract high-purity placer gold from the Singaita and Kidepo river basins, which is subsequently traded in Juba.',
-          'Orange Investments Company Limited partners directly with licensed local mining associations and registered trading houses in Juba, providing foreign investors with verified, compliant supply channels that bypass unregulated intermediaries.',
+          'Gold Africa partners directly with licensed local mining associations and registered trading houses in Juba, providing foreign investors with verified, compliant supply channels that bypass unregulated intermediaries.',
         ],
         bullets: [
           'Kapoeta & Budi: Placer gold ranging between 21 Karat and 23.5 Karat natural purity.',
@@ -224,7 +224,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
     slug: 'documents-required-to-buy-gold',
     title: 'Documents Required to Buy Gold: International Investor & Export Checklist',
     subtitle: 'The Definitive AML/KYC, Customs Clearance, Proof of Funds, and Export Permit Guide for 2026',
-    author: 'Orange Investments Company Limited',
+    author: 'Gold Africa',
     date: 'June 10, 2026',
     category: 'Compliance & Guides',
     readTime: '9 min read',
@@ -312,7 +312,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
       {
         question: 'Who pays the export duties and taxes in Africa?',
         answer:
-          'In a standard CIF (Cost, Insurance, and Freight) agreement, Orange Investments Company Limited handles and pays all export taxes, royalties, and customs clearance charges in the country of origin.',
+          'In a standard CIF (Cost, Insurance, and Freight) agreement, Gold Africa handles and pays all export taxes, royalties, and customs clearance charges in the country of origin.',
       },
     ],
   },
@@ -321,7 +321,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
     slug: 'gold-export-procedure',
     title: 'Gold Export Procedure from Africa: The Complete Step-by-Step Guide',
     subtitle: 'From Mine Gate to Global Freeport: Customs Clearance, Assay Verification & Insured Air Freight',
-    author: 'Orange Investments Company Limited',
+    author: 'Gold Africa',
     date: 'June 08, 2026',
     category: 'Logistics & Compliance',
     readTime: '8 min read',
@@ -329,7 +329,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
     secondaryImage: 'https://goldbarsuppliers.com/wp-content/uploads/2025/10/gold-3.webp',
     metaDescription: 'Detailed step-by-step procedure for exporting gold from Africa to Europe, UAE, USA, and Asia. Covers customs permits, assay testing, taxes, and Brinks logistics.',
     leadParagraph:
-      'Exporting gold from the African continent requires strict compliance with domestic mining legislation, central bank exchange controls, and international transit standards. Orange Investments Company Limited operates a turnkey export desk that coordinates the entire legal sequence, from raw dore smelting to customs clearance and armored international air transit.',
+      'Exporting gold from the African continent requires strict compliance with domestic mining legislation, central bank exchange controls, and international transit standards. Gold Africa operates a turnkey export desk that coordinates the entire legal sequence, from raw dore smelting to customs clearance and armored international air transit.',
     sections: [
       {
         heading: 'Step 1: Smelting & Primary Assay Verification',
@@ -391,7 +391,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
       {
         question: 'Who pays the shipping and insurance costs?',
         answer:
-          'Under standard CIF delivery agreements, Orange Investments Company Limited arranges and covers the complete freight, customs handling, and Lloyd’s of London transit insurance up to the buyer’s port of entry.',
+          'Under standard CIF delivery agreements, Gold Africa arranges and covers the complete freight, customs handling, and Lloyd’s of London transit insurance up to the buyer’s port of entry.',
       },
       {
         question: 'How long does the entire export process take?',
@@ -405,7 +405,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
     slug: 'rand-refinery',
     title: 'Rand Refinery: Africa’s Premier LBMA Good Delivery Gold Refiner',
     subtitle: 'History, Smelting Capabilities, Krugerrands, and Global Bullion Accreditation',
-    author: 'Orange Investments Company Limited',
+    author: 'Gold Africa',
     date: 'June 05, 2026',
     category: 'Refineries Directory',
     readTime: '7 min read',
@@ -438,7 +438,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
         heading: 'Responsible Sourcing & Conflict-Free Sourcing',
         paragraphs: [
           'Rand Refinery operates under strict compliance with the LBMA Responsible Gold Guidance, the OECD Due Diligence Guidance, and the World Gold Council Conflict-Free Gold Standard.',
-          'Orange Investments Company Limited sources Rand Refinery cast bars directly through authorized primary bullion distribution channels, guaranteeing complete chain of custody and certified authenticity.',
+          'Gold Africa sources Rand Refinery cast bars directly through authorized primary bullion distribution channels, guaranteeing complete chain of custody and certified authenticity.',
         ],
       },
     ],
@@ -476,7 +476,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
     slug: 'can-i-ship-gold-to-the-usa',
     title: 'Can I Ship Gold to the USA? US Customs, Tariffs, and Port of Entry Rules',
     subtitle: 'Everything US Investors Must Know: CBP Form 7501, IRS Reporting, Duty-Free Status, and Brinks Logistics',
-    author: 'Orange Investments Company Limited',
+    author: 'Gold Africa',
     date: 'June 02, 2026',
     category: 'Logistics & Compliance',
     readTime: '8 min read',
@@ -509,7 +509,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
       {
         heading: 'Safe Delivery: Brinks Armored Service to US Depositories',
         paragraphs: [
-          'Orange Investments Company Limited delivers directly to accredited U.S. depositories, including Delaware Depository, Texas Precious Metals Depository, and Brinks Salt Lake City / New York vaults.',
+          'Gold Africa delivers directly to accredited U.S. depositories, including Delaware Depository, Texas Precious Metals Depository, and Brinks Salt Lake City / New York vaults.',
           'Our team coordinates all CBP clearance documentation in advance so that customs release is granted without clearance delays.',
         ],
       },
@@ -547,7 +547,7 @@ export const articlesDatabase: Record<string, ArticleContent> = {
     slug: '10k-vs-14k-vs-18k-vs-24k-gold',
     title: '10k vs 14k vs 18k vs 24k Gold: Purity, Durability, Price & Investment Value',
     subtitle: 'The Complete Gold Karat Comparison Guide for Bullion Investors and Jewellery Buyers',
-    author: 'Orange Investments Company Limited',
+    author: 'Gold Africa',
     date: 'May 28, 2026',
     category: 'Educational Guides',
     readTime: '7 min read',
@@ -669,21 +669,21 @@ export function getArticleBySlug(slug: string): ArticleContent {
   return {
     slug: cleanSlug,
     title: `${formattedTitle}: The Definitive Sourcing & Investor Guide`,
-    subtitle: `Comprehensive Market Intelligence, Purity Verification, Regulatory Protocols & Secure Logistics by Orange Investments Company Limited`,
-    author: 'Orange Investments Company Limited',
+    subtitle: `Comprehensive Market Intelligence, Purity Verification, Regulatory Protocols & Secure Logistics by Gold Africa`,
+    author: 'Gold Africa',
     date: 'June 2026',
     category,
     readTime: '8 min read',
     featuredImage: 'https://goldbarsuppliers.com/wp-content/uploads/2025/10/gold-3.webp',
     secondaryImage: 'https://goldbarsuppliers.com/wp-content/uploads/2025/11/gold-in-south-africa.webp',
-    metaDescription: `Discover full market intelligence on ${formattedTitle}. Verified purity, certified XRF assay, international export procedures, and secure vault delivery from Orange Investments Company Limited.`,
-    leadParagraph: `Welcome to the official market and investor intelligence report on ${formattedTitle}. As Africa’s most trusted licensed precious metals trading firm, Orange Investments Company Limited connects international bullion investors, family offices, and industrial users with certified 24K, 22K, and 18K gold bars, dore, and nuggets with guaranteed LBMA compliance, transparent pricing, and insured global delivery.`,
+    metaDescription: `Discover full market intelligence on ${formattedTitle}. Verified purity, certified XRF assay, international export procedures, and secure vault delivery from Gold Africa.`,
+    leadParagraph: `Welcome to the official market and investor intelligence report on ${formattedTitle}. As Africa’s most trusted licensed precious metals trading firm, Gold Africa connects international bullion investors, family offices, and industrial users with certified 24K, 22K, and 18K gold bars, dore, and nuggets with guaranteed LBMA compliance, transparent pricing, and insured global delivery.`,
     sections: [
       {
         heading: `Strategic Market Overview: ${formattedTitle}`,
         paragraphs: [
           `The international physical gold market continues to experience sustained structural demand driven by sovereign central bank accumulation, currency diversification, and inflation hedging. Understanding the specific dynamics of ${formattedTitle} is essential for securing authentic precious metals allocations without exposure to black-market intermediaries.`,
-          `Orange Investments Company Limited operates directly within the primary production and institutional distribution channels. Every consignment is governed by rigorous Know Your Customer (KYC) and Anti-Money Laundering (AML) standards compliant with the OECD Due Diligence Guidance for Responsible Supply Chains.`,
+          `Gold Africa operates directly within the primary production and institutional distribution channels. Every consignment is governed by rigorous Know Your Customer (KYC) and Anti-Money Laundering (AML) standards compliant with the OECD Due Diligence Guidance for Responsible Supply Chains.`,
         ],
         bullets: [
           `Guaranteed minimum purity standards certified by independent X-ray Fluorescence (XRF) and fire assay testing.`,
@@ -741,7 +741,7 @@ export function getArticleBySlug(slug: string): ArticleContent {
     ],
     faqs: [
       {
-        question: `How can I verify the authenticity of gold purchased through Orange Investments Company Limited?`,
+        question: `How can I verify the authenticity of gold purchased through Gold Africa?`,
         answer: `Every shipment is accompanied by an independent XRF Spectrometer assay certificate from an ISO-accredited laboratory, individual laser-etched serial numbers, and complete documentation of origin confirming ethical, conflict-free sourcing.`,
       },
       {

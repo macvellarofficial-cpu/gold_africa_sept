@@ -31,13 +31,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
       {/* ════════════════════════════════════════
            HERO BANNER
       ════════════════════════════════════════════ */}
-      <section className="contact-hero" aria-label="Contact Orange Investments Company Limited">
+      <section className="contact-hero" aria-label="Contact Gold Africa">
         <div className="hero-bg" aria-hidden="true"></div>
         <div className="hero-overlay" aria-hidden="true"></div>
         <div className="hero-content">
           <div className="hero-eyebrow">Get in Touch</div>
           <h1>
-            Contact <em>Orange Investments</em> Co. Ltd
+            Contact <em>Gold Africa</em>
           </h1>
           <p>
             Certified 24K, 22K &amp; 18K gold bar enquiries, export documentation, live pricing, and wholesale orders — our team responds within 2 hours.
@@ -196,16 +196,16 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
             <div className="info-card-img">
               <SafeImage
                 src="https://goldbarsuppliers.com/wp-content/uploads/2026/06/Where-to-Buy-Gold-in-Sudan.webp"
-                alt="Orange Investments Company Limited — Lubowa Kampala Uganda headquarters"
+                alt="Gold Africa — Lubowa Kampala Uganda headquarters"
                 fallbackCategory="vault"
                 loading="lazy"
               />
             </div>
 
             <div className="info-card-body">
-              <h3>Orange Investments Co. Ltd</h3>
+              <h3>Gold Africa</h3>
               <p className="tagline">
-                Orange Investments Company Limited — Licensed precious metals supplier connecting international investors with pure African gold (Reg. No: 80020000702132).
+                Gold Africa — Licensed precious metals supplier connecting international investors with pure African gold (Reg. No: 80020000702132).
               </p>
 
               <div className="contact-items">
@@ -224,7 +224,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
                   <div>
                     <div className="contact-item-label">Email Address</div>
                     <div className="contact-item-value">
-                      <a href="mailto:info@buygold.blog">info@buygold.blog</a>
+                      <a href="mailto:info@goldafric.com">info@goldafric.com</a>
                     </div>
                   </div>
                 </div>
@@ -323,7 +323,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
             <div style={{ height: '180px', overflow: 'hidden', position: 'relative' }}>
               <SafeImage
                 src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/gold-3.webp"
-                alt="Certified African gold bars for international export — Orange Investments Company Limited"
+                alt="Certified African gold bars for international export — Gold Africa"
                 fallbackCategory="bars"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 loading="lazy"
@@ -350,7 +350,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
       {/* ════════════════════════════════════════
            WHY CONTACT US STRIP
       ════════════════════════════════════════════ */}
-      <section className="why-strip" aria-label="Why contact Orange Investments Company Limited">
+      <section className="why-strip" aria-label="Why contact Gold Africa">
         <div className="why-strip-inner">
           <div className="why-item">
             <span className="why-icon">⚡</span>
@@ -394,7 +394,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
               target="_blank"
               rel="noopener noreferrer"
               className="map-directions"
-              aria-label="Get directions to Orange Investments Company Limited office"
+              aria-label="Get directions to Gold Africa office"
             >
               📍 Get Directions
             </a>
@@ -407,8 +407,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Orange Investments Company Limited office location — Lubowa Kampala Uganda"
-              aria-label="Google Map showing Orange Investments Company Limited office at Lubowa, Kampala"
+              title="Gold Africa office location — Lubowa Kampala Uganda"
+              aria-label="Google Map showing Gold Africa office at Lubowa, Kampala"
             ></iframe>
           </div>
 
@@ -457,7 +457,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
             <div className="faq-item">
               <div className="faq-q">What is the current gold bar price from Africa?</div>
               <p className="faq-a">
-                As of June 2026, the 24K gold bar price is approximately $139.39/gram ($139,390/kg) at LBMA spot. Orange Investments Company Limited prices at 1.5–3% above spot. Contact us for a live quote — we update pricing in real time.
+                As of June 2026, the 24K gold bar price is approximately $139.39/gram ($139,390/kg) at LBMA spot. Gold Africa prices at 1.5–3% above spot. Contact us for a live quote — we update pricing in real time.
               </p>
             </div>
             <div className="faq-item">
@@ -481,7 +481,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
             <div className="faq-item">
               <div className="faq-q">Do you offer wholesale pricing for large orders?</div>
               <p className="faq-a">
-                Yes. Orange Investments Company Limited offers volume-based pricing for orders of 5kg and above. Orders of 50kg+ receive our most competitive rates — typically 1.5% above spot with reduced documentation fees. Contact us directly for wholesale pricing sheets and bulk order terms.
+                Yes. Gold Africa offers volume-based pricing for orders of 5kg and above. Orders of 50kg+ receive our most competitive rates — typically 1.5% above spot with reduced documentation fees. Contact us directly for wholesale pricing sheets and bulk order terms.
               </p>
             </div>
             <div className="faq-item">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { OrangeInvestmentsLogo } from './OrangeInvestmentsLogo';
+import { GoldAfricaLogo } from './GoldAfricaLogo';
 
 interface NavbarProps {
   onOpenQuoteModal: () => void;
@@ -25,15 +25,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuoteModal }) => {
             <a href="https://wa.me/256754681378" target="_blank" rel="noopener noreferrer">
               WhatsApp: +256 754 681378
             </a>
-            <a href="mailto:info@buygold.blog">info@buygold.blog</a>
+            <a href="mailto:info@goldafric.com">info@goldafric.com</a>
           </div>
         </div>
       </div>
 
       {/* ── MAIN NAV BAR ── */}
       <div className="gbs-main">
-        <Link to="/" className="gbs-logo" aria-label="Orange Investments Co. Ltd — home">
-          <OrangeInvestmentsLogo variant="dark" />
+        <Link to="/" className="gbs-logo" aria-label="Gold Africa — home">
+          <GoldAfricaLogo variant="dark" height={44} />
         </Link>
 
         <button

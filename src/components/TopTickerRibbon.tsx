@@ -33,11 +33,11 @@ export const TopTickerRibbon: React.FC = () => {
             <span className="font-semibold">2-Hour Response Guaranteed</span>
           </div>
           <a
-            href="mailto:info@buygold.blog"
+            href="mailto:info@goldafric.com"
             className="hidden sm:flex items-center gap-1.5 hover:text-[#DFB845] transition-colors"
           >
             <Mail className="w-3.5 h-3.5 text-[#C59B27]" />
-            <span>info@buygold.blog</span>
+            <span>info@goldafric.com</span>
           </a>
           <a
             href="https://wa.me/256754681378"

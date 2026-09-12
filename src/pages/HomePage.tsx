@@ -23,7 +23,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
       {/* ════════════════════════════════
            HERO
       ════════════════════════════════ */}
-      <section className="hero" aria-label="Orange Investments Company Limited hero">
+      <section className="hero" aria-label="Gold Africa hero">
         <div className="hero-bg" aria-hidden="true"></div>
         <div className="hero-veil" aria-hidden="true"></div>
 
@@ -40,7 +40,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
             </h1>
 
             <p className="hero-sub">
-              Orange Investments Company Limited connects serious investors and businesses worldwide with certified <strong style={{ color: '#fff' }}>24K, 22K, and 18K gold bars</strong>, gold nuggets, gold dust, and dore bars — sourced directly from Africa's richest mines with full assay documentation and insured global delivery.
+              Gold Africa connects serious investors and businesses worldwide with certified <strong style={{ color: '#fff' }}>24K, 22K, and 18K gold bars</strong>, gold nuggets, gold dust, and dore bars — sourced directly from Africa's richest mines with full assay documentation and insured global delivery.
             </p>
 
             <div className="hero-actions">
@@ -211,7 +211,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
               Certified and Ready to Ship
             </h2>
             <p className="lead" style={{ margin: '14px auto 0', textAlign: 'center' }}>
-              From pure investment bars to natural gold nuggets and raw gold dust — Orange Investments Company Limited covers every product category you need, direct from Africa's most productive mines.
+              From pure investment bars to natural gold nuggets and raw gold dust — Gold Africa covers every product category you need, direct from Africa's most productive mines.
             </p>
           </div>
 
@@ -457,7 +457,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
               24K vs 22K vs 18K vs 14K Gold — Which Is Right for You?
             </h2>
             <p className="lead" style={{ margin: '14px auto 0', textAlign: 'center' }}>
-              Understanding gold purity is the foundation of every smart gold investment. Orange Investments Company Limited supplies all standard karat levels with certified assay documentation. Here is how each karat compares in June 2026.
+              Understanding gold purity is the foundation of every smart gold investment. Gold Africa supplies all standard karat levels with certified assay documentation. Here is how each karat compares in June 2026.
             </p>
           </div>
 
@@ -534,7 +534,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
               <div className="eyebrow">African Gold Markets</div>
               <h2 className="h2" id="dest-title">Buy Gold from Africa's Richest Producing Nations</h2>
               <p className="lead" style={{ marginTop: '12px' }}>
-                Orange Investments Company Limited sources from licensed mines and certified exporters across Africa's top gold-producing countries, giving you direct access to mine-proximate pricing.
+                Gold Africa sources from licensed mines and certified exporters across Africa's top gold-producing countries, giving you direct access to mine-proximate pricing.
               </p>
             </div>
             <Link to="/about" className="btn btn-outline btn-sm">All Dealers →</Link>
@@ -658,7 +658,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
             <div className="why-img-stack">
               <img
                 src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/gold-3.webp?w=1200&ssl=1"
-                alt="Certified gold bars Africa — Orange Investments Company Limited assay verification"
+                alt="Certified gold bars Africa — Gold Africa assay verification"
                 className="why-main-img"
               />
               <div className="why-badge-num">
@@ -675,7 +675,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
             </div>
 
             <div>
-              <div className="eyebrow">Why Orange Investments Co. Ltd</div>
+              <div className="eyebrow">Why Gold Africa</div>
               <h2 className="h2" id="why-title">
                 Africa's Most Trusted Gold Bar Supplier — Here's Why
               </h2>
@@ -796,49 +796,49 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
             <div className="faq-item">
               <div className="faq-q">How much do gold bars cost from Africa in 2026?</div>
               <p className="faq-a">
-                As of June 16, 2026, the 24K gold bar price is $139.39/gram ($4,339/oz, $139,390/kg) at LBMA spot. Orange Investments Company Limited prices at 1.5–3% above spot — approximately $141,410–$143,572 per kg all-in, including assay, documentation, and insured Brinks shipping. This is $5,000–$13,000 cheaper per kilogram than equivalent bars from US or UK retail dealers.
+                As of June 16, 2026, the 24K gold bar price is $139.39/gram ($4,339/oz, $139,390/kg) at LBMA spot. Gold Africa prices at 1.5–3% above spot — approximately $141,410–$143,572 per kg all-in, including assay, documentation, and insured Brinks shipping. This is $5,000–$13,000 cheaper per kilogram than equivalent bars from US or UK retail dealers.
               </p>
             </div>
             <div className="faq-item">
               <div className="faq-q">Is it safe to buy gold bars from Africa?</div>
               <p className="faq-a">
-                Yes — when purchasing from a licensed, documented dealer with independent assay certification, bank wire to a registered company account, and insured Brinks cargo. Orange Investments Company Limited meets all these standards. We conduct live video XRF assay before every payment and provide the complete documentation package for US, EU, and UAE customs clearance.
+                Yes — when purchasing from a licensed, documented dealer with independent assay certification, bank wire to a registered company account, and insured Brinks cargo. Gold Africa meets all these standards. We conduct live video XRF assay before every payment and provide the complete documentation package for US, EU, and UAE customs clearance.
               </p>
             </div>
             <div className="faq-item">
               <div className="faq-q">Can I ship gold to the USA from Africa?</div>
               <p className="faq-a">
-                Yes — investment-grade gold bullion (HS code 7108.12) enters the USA duty-free. All shipments must be declared at US CBP port of entry with full documentation including Certificate of Origin, commercial invoice, and assay certificate — all of which Orange Investments Company Limited provides.
+                Yes — investment-grade gold bullion (HS code 7108.12) enters the USA duty-free. All shipments must be declared at US CBP port of entry with full documentation including Certificate of Origin, commercial invoice, and assay certificate — all of which Gold Africa provides.
               </p>
             </div>
             <div className="faq-item">
               <div className="faq-q">What is the difference between 24K, 22K, and 18K gold?</div>
               <p className="faq-a">
-                24K (999 fineness) is 99.9% pure gold — best for investment and central bank reserves. 22K (916 fineness) is 91.7% gold — preferred for Middle Eastern and South Asian jewellery. 18K (750 fineness) is 75% gold — the most popular European jewellery karat. Orange Investments Company Limited supplies all three with certified assay documentation.
+                24K (999 fineness) is 99.9% pure gold — best for investment and central bank reserves. 22K (916 fineness) is 91.7% gold — preferred for Middle Eastern and South Asian jewellery. 18K (750 fineness) is 75% gold — the most popular European jewellery karat. Gold Africa supplies all three with certified assay documentation.
               </p>
             </div>
             <div className="faq-item">
               <div className="faq-q">What is the best place to buy gold bars in Africa?</div>
               <p className="faq-a">
-                Ghana offers the lowest formal export levy (~1.5–2% via GoldBod). Uganda and Tanzania provide competitive mine-direct pricing. South Africa offers LBMA-accredited Rand Refinery bars at the highest global liquidity. Orange Investments Company Limited sources from all major African markets — advising buyers on the optimal country for their specific product and compliance requirements.
+                Ghana offers the lowest formal export levy (~1.5–2% via GoldBod). Uganda and Tanzania provide competitive mine-direct pricing. South Africa offers LBMA-accredited Rand Refinery bars at the highest global liquidity. Gold Africa sources from all major African markets — advising buyers on the optimal country for their specific product and compliance requirements.
               </p>
             </div>
             <div className="faq-item">
               <div className="faq-q">Can I buy gold bars in Dubai from Africa?</div>
               <p className="faq-a">
-                Yes. Dubai's DMCC is one of the world's largest gold trading hubs and a major re-export centre for African gold. Orange Investments Company Limited exports to UAE buyers with DMCC-compliant documentation including Certificate of Origin, assay certificates, and chain-of-custody records.
+                Yes. Dubai's DMCC is one of the world's largest gold trading hubs and a major re-export centre for African gold. Gold Africa exports to UAE buyers with DMCC-compliant documentation including Certificate of Origin, assay certificates, and chain-of-custody records.
               </p>
             </div>
             <div className="faq-item">
               <div className="faq-q">How can I buy gold online in Canada from Africa?</div>
               <p className="faq-a">
-                Canadian buyers can purchase African gold bars through Orange Investments Company Limited via bank wire transfer, with delivery by Brinks insured cargo from Africa to any Canadian city. All Canadian import requirements are fully met by our documentation package.
+                Canadian buyers can purchase African gold bars through Gold Africa via bank wire transfer, with delivery by Brinks insured cargo from Africa to any Canadian city. All Canadian import requirements are fully met by our documentation package.
               </p>
             </div>
             <div className="faq-item">
               <div className="faq-q">What documents are required to buy gold from Africa?</div>
               <p className="faq-a">
-                For import to most countries: a commercial invoice, Certificate of Origin, independent assay certificate, packing list, and AML/KYC documentation (passport/ID, proof of business). For US buyers: CBP import declaration. For EU buyers: OECD Due Diligence documentation if from conflict-affected areas. Orange Investments Company Limited provides all documentation.
+                For import to most countries: a commercial invoice, Certificate of Origin, independent assay certificate, packing list, and AML/KYC documentation (passport/ID, proof of business). For US buyers: CBP import declaration. For EU buyers: OECD Due Diligence documentation if from conflict-affected areas. Gold Africa provides all documentation.
               </p>
             </div>
           </div>
@@ -925,7 +925,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
             <div className="eyebrow">Global Shipping</div>
             <h2 className="h2" id="intl-title">We Deliver African Gold to Buyers Worldwide</h2>
             <p className="lead" style={{ margin: '14px auto 0', textAlign: 'center' }}>
-              Orange Investments Company Limited ships certified African gold bars to international buyers in over 40 countries. Choose your destination for specific buying guides and local import requirements.
+              Gold Africa ships certified African gold bars to international buyers in over 40 countries. Choose your destination for specific buying guides and local import requirements.
             </p>
           </div>
 
@@ -982,7 +982,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
           <div>
             <h2>Ready to Buy Certified Gold Bars from Africa?</h2>
             <p>
-              At today's LBMA spot of <strong style={{ color: 'var(--gold-lt)' }}>$139.39/gram ($139,390/kg)</strong>, African gold sourced through Orange Investments Company Limited saves you $5,000–$13,000 per kilogram versus US or UK retail. Our live XRF assay, Brinks shipping, and full OECD-compliant documentation make your purchase safe, fast, and fully bankable.
+              At today's LBMA spot of <strong style={{ color: 'var(--gold-lt)' }}>$139.39/gram ($139,390/kg)</strong>, African gold sourced through Gold Africa saves you $5,000–$13,000 per kilogram versus US or UK retail. Our live XRF assay, Brinks shipping, and full OECD-compliant documentation make your purchase safe, fast, and fully bankable.
             </p>
             <div style={{ display: 'flex', gap: '14px', marginTop: '32px', flexWrap: 'wrap' }}>
               <Link to="/gold-bars-for-sale" className="btn btn-gold">

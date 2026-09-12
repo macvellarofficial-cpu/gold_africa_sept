@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { OrangeInvestmentsLogo } from './OrangeInvestmentsLogo';
+import { GoldAfricaLogo } from './GoldAfricaLogo';
 
 interface FooterProps {
   onOpenQuoteModal: () => void;
@@ -17,11 +17,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuoteModal }) => {
           {/* Brand Column */}
           <div>
             <div className="mb-3">
-              <OrangeInvestmentsLogo variant="light" showTagline={true} />
+              <GoldAfricaLogo variant="light" showTagline={true} height={52} />
             </div>
             <div className="gb-footer__tagline">Lubowa, Kampala, Uganda · Reg. No: 80020000702132</div>
             <p className="gb-footer__brand-desc">
-              Orange Investments Company Limited connects serious investors and
+              Gold Africa connects serious investors and
               businesses worldwide with certified 24K, 22K, and 18K gold bars,
               nuggets, and dore — sourced directly from Africa's richest mines
               with full assay documentation and insured global delivery.
@@ -36,7 +36,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuoteModal }) => {
             <div className="gb-footer__contact">
               📍 Lubowa, Kampala, Uganda<br />
               📞 <a href="https://wa.me/256754681378" target="_blank" rel="noopener noreferrer">WhatsApp: +256 754 681378</a><br />
-              ✉ <a href="mailto:info@buygold.blog">info@buygold.blog</a><br />
+              ✉ <a href="mailto:info@goldafric.com">info@goldafric.com</a><br />
               ⏱ Response within 2 hours · 7 days a week
             </div>
 
@@ -126,7 +126,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuoteModal }) => {
 
         {/* BOTTOM BAR */}
         <div className="gb-footer__bottom">
-          <span>© 2026 Orange Investments Company Limited. All rights reserved. · Reg. No: 80020000702132 · Lubowa, Kampala, Uganda</span>
+          <span>© 2026 Gold Africa. All rights reserved. · Reg. No: 80020000702132 · Lubowa, Kampala, Uganda</span>
           <div className="gb-footer__bottom-links">
             <Link to="/about">About</Link>
             <Link to="/services">Services</Link>
@@ -134,7 +134,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuoteModal }) => {
             <Link to="/contact">Contact</Link>
           </div>
           <p className="gb-footer__disclaimer">
-            Orange Investments Company Limited (Registration No: 80020000702132) is a licensed precious metals trading company headquartered in Lubowa, Kampala, Uganda. All transactions are subject to full AML/KYC verification and applicable national and international export regulations.
+            Gold Africa (Registration No: 80020000702132) is a licensed precious metals trading company headquartered in Lubowa, Kampala, Uganda. All transactions are subject to full AML/KYC verification and applicable national and international export regulations.
             Gold prices quoted reflect live LBMA spot rates and are subject to change without notice. Past performance of gold prices does not guarantee future results.
             This site does not constitute financial or investment advice.
           </p>

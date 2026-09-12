@@ -54,7 +54,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
 
   const generateWhatsAppUrl = () => {
     const text = encodeURIComponent(
-      `Hello Orange Investments Company Limited, I have requested Soft Corporate Offer (SCO) Ref: ${scoReference}.\n` +
+      `Hello Gold Africa, I have requested Soft Corporate Offer (SCO) Ref: ${scoReference}.\n` +
       `Name: ${fullName}\n` +
       `Product: ${productData.name}\n` +
       `Quantity: ${quantityKg} Kilograms\n` +

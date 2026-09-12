@@ -51,7 +51,7 @@ export const KilobarProductPage: React.FC<KilobarPageProps> = ({ onOpenQuoteModa
               1kg Gold Bars for Sale: Buy 99.99% Pure Gold in Africa
             </h1>
             <p style={{ fontSize: '1.02rem', lineHeight: 1.8, color: 'var(--charcoal)', marginBottom: '20px' }}>
-              At <strong>Orange Investments Company Limited</strong>, we supply certified, investment-grade <strong>1 kilogram gold bars</strong> directly from Africa's richest goldfields to institutional buyers and private investors across the USA, UK, UAE, Europe, and Asia.
+              At <strong>Gold Africa</strong>, we supply certified, investment-grade <strong>1 kilogram gold bars</strong> directly from Africa's richest goldfields to institutional buyers and private investors across the USA, UK, UAE, Europe, and Asia.
             </p>
 
             {/* Quick stats badges */}
@@ -206,7 +206,7 @@ export const KilobarProductPage: React.FC<KilobarPageProps> = ({ onOpenQuoteModa
             Our 1kg Gold Bar — Full Specifications
           </h2>
           <p style={{ fontSize: '1rem', lineHeight: 1.8, color: 'var(--charcoal)', marginBottom: '24px' }}>
-            At <strong>Orange Investments Company Limited</strong>, we supply only investment-grade 1 kilogram gold bars that meet or exceed LBMA (London Bullion Market Association) Good Delivery standards:
+            At <strong>Gold Africa</strong>, we supply only investment-grade 1 kilogram gold bars that meet or exceed LBMA (London Bullion Market Association) Good Delivery standards:
           </p>
 
           <div style={{ overflowX: 'auto' }}>
