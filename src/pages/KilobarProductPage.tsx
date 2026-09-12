@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Award, ShieldCheck, CheckCircle2, ArrowRight, Phone, Calculator, Lock } from 'lucide-react';
 import { LIVE_SPOT_DATA } from '../data/goldData';
+import { SafeImage } from '../components/SafeImage';
 
 interface KilobarPageProps {
   onOpenQuoteModal: (productSlug?: string) => void;
@@ -90,9 +91,10 @@ export const KilobarProductPage: React.FC<KilobarPageProps> = ({ onOpenQuoteModa
           </div>
 
           <div style={{ position: 'relative', borderRadius: 'var(--r-xl)', overflow: 'hidden', border: '1px solid var(--border)', boxShadow: '0 20px 48px rgba(44,36,16,.12)' }}>
-            <img
-              src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/1kg-24k-gold-bars-for-sale.jpg"
+            <SafeImage
+              src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/gold-3.webp"
               alt="1kg Pure Gold Bar Africa"
+              fallbackCategory="kilobar"
               style={{ width: '100%', height: '420px', objectFit: 'cover' }}
             />
             <div style={{ position: 'absolute', bottom: '20px', left: '20px', right: '20px', background: 'rgba(26,18,0,.88)', backdropFilter: 'blur(8px)', color: 'white', padding: '14px 18px', borderRadius: 'var(--r-md)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -264,9 +266,10 @@ export const KilobarProductPage: React.FC<KilobarPageProps> = ({ onOpenQuoteModa
         {/* ── SOURCING & PROVENANCE ── */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center', marginBottom: '64px' }} className="fsplit">
           <div style={{ borderRadius: 'var(--r-xl)', overflow: 'hidden', border: '1px solid var(--border)' }}>
-            <img
-              src="https://goldbarsuppliers.com/wp-content/uploads/2025/11/buygold.jpeg"
+            <SafeImage
+              src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/buygold.jpeg"
               alt="African Gold Provenance"
+              fallbackCategory="bars"
               style={{ width: '100%', height: '380px', objectFit: 'cover' }}
             />
           </div>

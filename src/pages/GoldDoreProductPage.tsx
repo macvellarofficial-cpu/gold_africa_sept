@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Phone, CheckCircle2 } from 'lucide-react';
+import { SafeImage } from '../components/SafeImage';
 
 interface GoldDorePageProps {
   onOpenQuoteModal: (productSlug?: string) => void;
@@ -83,9 +84,10 @@ export const GoldDoreProductPage: React.FC<GoldDorePageProps> = ({ onOpenQuoteMo
           </div>
 
           <div style={{ position: 'relative', borderRadius: 'var(--r-xl)', overflow: 'hidden', border: '1px solid var(--border)', boxShadow: '0 20px 48px rgba(44,36,16,.12)' }}>
-            <img
+            <SafeImage
               src="https://goldbarsuppliers.com/wp-content/uploads/2025/11/gold-dore-bars-for-sale.jpeg"
               alt="gold dore bars for sale"
+              fallbackCategory="dore"
               style={{ width: '100%', height: '420px', objectFit: 'cover' }}
             />
             <div style={{ position: 'absolute', bottom: '20px', left: '20px', right: '20px', background: 'rgba(26,18,0,.88)', backdropFilter: 'blur(8px)', color: 'white', padding: '14px 18px', borderRadius: 'var(--r-md)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

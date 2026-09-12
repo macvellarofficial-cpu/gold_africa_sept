@@ -15,6 +15,8 @@ import { ServicesPage } from './pages/ServicesPage';
 import { RefineriesDirectoryPage } from './pages/RefineriesDirectoryPage';
 import { ContactPage } from './pages/ContactPage';
 
+import { BlogArticlePage } from './pages/BlogArticlePage';
+
 // Scroll restoration helper
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
@@ -141,6 +143,14 @@ export const App: React.FC = () => {
             <Route path="/contact/" element={<ContactPage onOpenQuoteModal={() => handleOpenQuoteModal()} />} />
             <Route path="/contact-us" element={<ContactPage onOpenQuoteModal={() => handleOpenQuoteModal()} />} />
             <Route path="/contact-us/" element={<ContactPage onOpenQuoteModal={() => handleOpenQuoteModal()} />} />
+
+            {/* Category Archives */}
+            <Route path="/category/:category" element={<BlogArticlePage onOpenQuoteModal={handleOpenQuoteModal} />} />
+            <Route path="/category/:category/" element={<BlogArticlePage onOpenQuoteModal={handleOpenQuoteModal} />} />
+
+            {/* Dynamic Blog Posts & Regional Guides Engine (Matches all 225 slugs from sitemap) */}
+            <Route path="/:slug" element={<BlogArticlePage onOpenQuoteModal={handleOpenQuoteModal} />} />
+            <Route path="/:slug/" element={<BlogArticlePage onOpenQuoteModal={handleOpenQuoteModal} />} />
 
             {/* Fallback to Home */}
             <Route path="*" element={<HomePage onOpenQuoteModal={handleOpenQuoteModal} />} />

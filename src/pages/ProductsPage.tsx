@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { SafeImage } from '../components/SafeImage';
 
 interface ProductsPageProps {
   onOpenQuoteModal?: (productSlug?: string) => void;
@@ -48,9 +49,10 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) 
             </p>
 
             <div style={{ margin: '24px 0', borderRadius: 'var(--r-md)', overflow: 'hidden', border: '1px solid var(--border)' }}>
-              <img
-                src="https://i0.wp.com/goldbarsuppliers.com/wp-content/uploads/2025/11/1-oz-gold-bAR.jpeg?resize=752%2C367"
+              <SafeImage
+                src="https://goldbarsuppliers.com/wp-content/uploads/2025/11/1-oz-Gold-Bar-for-Sale.webp"
                 alt="Gold Bars for Sale"
+                fallbackCategory="oneOz"
                 style={{ width: '100%', height: 'auto', display: 'block' }}
                 loading="lazy"
               />
@@ -128,9 +130,10 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) 
             </p>
 
             <div style={{ margin: '24px 0', borderRadius: 'var(--r-md)', overflow: 'hidden', border: '1px solid var(--border)' }}>
-              <img
-                src="https://i0.wp.com/goldbarsuppliers.com/wp-content/uploads/2025/11/buygold.jpeg?resize=761%2C507"
+              <SafeImage
+                src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/buygold.jpeg"
                 alt="Buy Gold Online in Canada"
+                fallbackCategory="bars"
                 style={{ width: '100%', height: 'auto', display: 'block' }}
                 loading="lazy"
               />
@@ -180,9 +183,10 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) 
             </div>
 
             <div style={{ margin: '24px 0', borderRadius: 'var(--r-md)', overflow: 'hidden', border: '1px solid var(--border)' }}>
-              <img
-                src="https://i0.wp.com/goldbarsuppliers.com/wp-content/uploads/2025/10/document-gold.jpeg?resize=747%2C498"
+              <SafeImage
+                src="https://goldbarsuppliers.com/wp-content/uploads/2025/11/gold-in-south-africa.webp"
                 alt="18K Gold Bars for Sale"
+                fallbackCategory="bars"
                 style={{ width: '100%', height: 'auto', display: 'block' }}
                 loading="lazy"
               />
@@ -208,7 +212,11 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) 
               <div className="srv-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px' }}>
                 <div className="srv-card">
                   <div className="srv-card-img" style={{ height: '160px' }}>
-                    <img src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/1kg-24k-gold-bars-for-sale.jpg" alt="1kg Gold Bar" />
+                    <SafeImage
+                      src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/gold-3.webp"
+                      alt="1kg Gold Bar"
+                      fallbackCategory="kilobar"
+                    />
                     <span className="srv-tag">Best Value</span>
                   </div>
                   <div className="srv-body">
@@ -223,7 +231,11 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) 
 
                 <div className="srv-card">
                   <div className="srv-card-img" style={{ height: '160px' }}>
-                    <img src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/1-oz-gold-bars-for-sale.jpg" alt="1 oz Gold Bar" />
+                    <SafeImage
+                      src="https://goldbarsuppliers.com/wp-content/uploads/2025/11/1-oz-Gold-Bar-for-Sale.webp"
+                      alt="1 oz Gold Bar"
+                      fallbackCategory="oneOz"
+                    />
                     <span className="srv-tag">Popular</span>
                   </div>
                   <div className="srv-body">
@@ -238,7 +250,11 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) 
 
                 <div className="srv-card">
                   <div className="srv-card-img" style={{ height: '160px' }}>
-                    <img src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/dore-gold-bars-for-sale.jpg" alt="Gold Dore Bar" />
+                    <SafeImage
+                      src="https://goldbarsuppliers.com/wp-content/uploads/2025/11/gold-dore-bars-for-sale.jpeg"
+                      alt="Gold Dore Bar"
+                      fallbackCategory="dore"
+                    />
                     <span className="srv-tag" style={{ background: 'var(--brown)' }}>Wholesale</span>
                   </div>
                   <div className="srv-body">

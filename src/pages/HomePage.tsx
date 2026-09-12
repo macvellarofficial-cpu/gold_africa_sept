@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { SafeImage } from '../components/SafeImage';
 
 interface HomePageProps {
   onOpenQuoteModal: (productSlug?: string) => void;
@@ -540,10 +541,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
           </div>
 
           <div className="dest-grid">
-            <Link to="/products" className="dest-card" aria-label="Buy gold in Ghana">
-              <img
-                src="https://goldbarsuppliers.com/wp-content/uploads/2026/06/100-Grams-Gold-Bars-for-Sale-in-Ghana-.jpeg?resize=300%2C168"
+            <Link to="/buy-gold-in-ghana" className="dest-card" aria-label="Buy gold in Ghana">
+              <SafeImage
+                src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/buygold.jpeg"
                 alt="Buy gold in Ghana — GoldBod certified dealers Accra Kumasi"
+                fallbackCategory="bars"
                 className="dest-img"
               />
               <div className="dest-veil"></div>
@@ -554,12 +556,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
               </div>
             </Link>
 
-            <Link to="/products" className="dest-card" aria-label="Buy gold in Tanzania">
-              <img
-                src="https://goldbarsuppliers.com/wp-content/uploads/2026/05/Gold-Suppliers-in-Cameroon.jpeg?resize=300%2C156"
+            <Link to="/buy-gold-in-tanzania" className="dest-card" aria-label="Buy gold in Tanzania">
+              <SafeImage
+                src="https://goldbarsuppliers.com/wp-content/uploads/2025/11/gold-nuggetd.jpeg"
                 alt="Buy gold in Tanzania — TMC licensed dealers Dar es Salaam"
+                fallbackCategory="nuggets"
                 className="dest-img"
-                style={{ filter: 'sepia(.1)' }}
               />
               <div className="dest-veil"></div>
               <div className="dest-info">
@@ -570,11 +572,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
             </Link>
 
             <Link to="/gold-for-sale-in-uganda" className="dest-card" aria-label="Buy gold in Uganda">
-              <img
-                src="https://goldbarsuppliers.com/wp-content/uploads/2026/05/Gold-Trading-Companies-in-Nigeria.webp?resize=300%2C200"
+              <SafeImage
+                src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/gold-3.webp"
                 alt="Buy gold in Uganda — AGR certified Kampala Entebbe"
+                fallbackCategory="kilobar"
                 className="dest-img"
-                style={{ filter: 'brightness(.85)' }}
               />
               <div className="dest-veil"></div>
               <div className="dest-info">
@@ -584,12 +586,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
               </div>
             </Link>
 
-            <Link to="/products" className="dest-card" aria-label="Buy gold in Congo DRC">
-              <img
-                src="https://goldbarsuppliers.com/wp-content/uploads/2026/02/400-oz-Gold-Bar-.jpeg?resize=300%2C195"
+            <Link to="/buy-raw-gold-in-congo" className="dest-card" aria-label="Buy gold in Congo DRC">
+              <SafeImage
+                src="https://goldbarsuppliers.com/wp-content/uploads/2025/11/gold-dore-bars-for-sale.jpeg"
                 alt="Buy raw gold in Congo DRC — Kinshasa OECD compliant exporter"
+                fallbackCategory="dore"
                 className="dest-img"
-                style={{ filter: 'sepia(.15) brightness(.9)' }}
               />
               <div className="dest-veil"></div>
               <div className="dest-info">
@@ -599,12 +601,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
               </div>
             </Link>
 
-            <Link to="/products" className="dest-card" aria-label="Buy gold bars in Mali">
-              <img
-                src="https://goldbarsuppliers.com/wp-content/uploads/2026/02/Uganda-Gold-Export-Procedure.webp?resize=300%2C196"
+            <Link to="/buy-gold-bars-in-mali" className="dest-card" aria-label="Buy gold bars in Mali">
+              <SafeImage
+                src="https://goldbarsuppliers.com/wp-content/uploads/2025/11/1-oz-Gold-Bar-for-Sale.webp"
                 alt="Buy gold bars in Mali — Bamako Kayes West Africa"
+                fallbackCategory="bars"
                 className="dest-img"
-                style={{ filter: 'sepia(.2)' }}
               />
               <div className="dest-veil"></div>
               <div className="dest-info">
@@ -614,12 +616,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
               </div>
             </Link>
 
-            <Link to="/products" className="dest-card" aria-label="Buy gold in South Africa">
-              <img
-                src="https://goldbarsuppliers.com/wp-content/uploads/2026/01/1-oz-gold-bAR-1.jpeg?resize=300%2C146"
+            <Link to="/buy-gold-in-south-africa" className="dest-card" aria-label="Buy gold in South Africa">
+              <SafeImage
+                src="https://goldbarsuppliers.com/wp-content/uploads/2025/11/gold-in-south-africa.webp"
                 alt="Buy gold in South Africa — Johannesburg Rand Refinery"
+                fallbackCategory="handHoldingBar"
                 className="dest-img"
-                style={{ filter: 'brightness(.88) sepia(.1)' }}
               />
               <div className="dest-veil"></div>
               <div className="dest-info">
@@ -629,12 +631,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
               </div>
             </Link>
 
-            <Link to="/products" className="dest-card" aria-label="Gold bars price across Africa">
-              <img
-                src="https://goldbarsuppliers.com/wp-content/uploads/2026/02/Cheapest-State-to-Buy-Gold-in-the-USA.jpeg?resize=300%2C169"
+            <Link to="/gold-bars-price-in-africa" className="dest-card" aria-label="Gold bars price across Africa">
+              <SafeImage
+                src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/gold-3.webp"
                 alt="Gold bar prices in Africa — all countries comparison"
+                fallbackCategory="bars"
                 className="dest-img"
-                style={{ filter: 'sepia(.25) brightness(.85)' }}
               />
               <div className="dest-veil"></div>
               <div className="dest-info">
@@ -857,11 +859,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
           </div>
 
           <div className="blog-grid">
-            <Link to="/gold-bars-for-sale" className="blog-card">
+            <Link to="/gold-bars-price-in-africa" className="blog-card">
               <div className="blog-img-wrap">
-                <img
-                  src="https://goldbarsuppliers.com/wp-content/uploads/2026/02/50-grams-gold-bar-for-sale-1.webp?resize=300%2C158"
+                <SafeImage
+                  src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/gold-3.webp"
                   alt="Gold bars price in Africa 2026 — live market rates all countries"
+                  fallbackCategory="bars"
                   className="blog-img"
                   loading="lazy"
                 />
@@ -874,14 +877,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
               </div>
             </Link>
 
-            <Link to="/about" className="blog-card">
+            <Link to="/best-gold-dealers-in-africa" className="blog-card">
               <div className="blog-img-wrap">
-                <img
-                  src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/gold-3.webp?w=1200&ssl=1"
+                <SafeImage
+                  src="https://goldbarsuppliers.com/wp-content/uploads/2025/11/gold-in-south-africa.webp"
                   alt="Best gold dealers in Africa 2026 — licensed certified dealers"
+                  fallbackCategory="handHoldingBar"
                   className="blog-img"
                   loading="lazy"
-                  style={{ filter: 'sepia(.1)' }}
                 />
               </div>
               <div className="blog-body">
@@ -892,14 +895,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
               </div>
             </Link>
 
-            <Link to="/products" className="blog-card">
+            <Link to="/current-gold-spot-price-price-prediction" className="blog-card">
               <div className="blog-img-wrap">
-                <img
-                  src="https://goldbarsuppliers.com/wp-content/uploads/2026/01/How-to-Import-Gold-from-Africa-to-Germany.webp?resize=300%2C169"
+                <SafeImage
+                  src="https://goldbarsuppliers.com/wp-content/uploads/2025/11/1-oz-Gold-Bar-for-Sale.webp"
                   alt="Current gold spot price prediction 2026 — investment analysis"
+                  fallbackCategory="oneOz"
                   className="blog-img"
                   loading="lazy"
-                  style={{ filter: 'sepia(.15) brightness(.92)' }}
                 />
               </div>
               <div className="blog-body">
@@ -927,42 +930,42 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px' }} className="intl-grid">
-            <Link to="/contact" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
+            <Link to="/buying-gold-online-in-the-usa" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
               <div style={{ fontSize: '1.8rem', marginBottom: '8px' }}>🇺🇸</div>
               <strong style={{ display: 'block', fontSize: '.88rem', color: 'var(--dark)', fontWeight: 700, marginBottom: '3px' }}>United States</strong>
               <span style={{ fontSize: '.73rem', color: 'var(--stone)' }}>Duty-free gold import · CBP compliant</span>
             </Link>
-            <Link to="/contact" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
+            <Link to="/24k-gold-price-in-dubai" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
               <div style={{ fontSize: '1.8rem', marginBottom: '8px' }}>🇦🇪</div>
               <strong style={{ display: 'block', fontSize: '.88rem', color: 'var(--dark)', fontWeight: 700, marginBottom: '3px' }}>UAE / Dubai</strong>
               <span style={{ fontSize: '.73rem', color: 'var(--stone)' }}>DMCC compliant · tax-free</span>
             </Link>
-            <Link to="/contact" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
+            <Link to="/buy-gold-bars-uk" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
               <div style={{ fontSize: '1.8rem', marginBottom: '8px' }}>🇬🇧</div>
               <strong style={{ display: 'block', fontSize: '.88rem', color: 'var(--dark)', fontWeight: 700, marginBottom: '3px' }}>United Kingdom</strong>
               <span style={{ fontSize: '.73rem', color: 'var(--stone)' }}>VAT-exempt investment gold</span>
             </Link>
-            <Link to="/contact" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
+            <Link to="/buy-gold-online-in-canada" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
               <div style={{ fontSize: '1.8rem', marginBottom: '8px' }}>🇨🇦</div>
               <strong style={{ display: 'block', fontSize: '.88rem', color: 'var(--dark)', fontWeight: 700, marginBottom: '3px' }}>Canada</strong>
               <span style={{ fontSize: '.73rem', color: 'var(--stone)' }}>GST-exempt bullion · fast delivery</span>
             </Link>
-            <Link to="/contact" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
+            <Link to="/buy-gold-online-in-germany" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
               <div style={{ fontSize: '1.8rem', marginBottom: '8px' }}>🇩🇪</div>
               <strong style={{ display: 'block', fontSize: '.88rem', color: 'var(--dark)', fontWeight: 700, marginBottom: '3px' }}>Germany</strong>
               <span style={{ fontSize: '.73rem', color: 'var(--stone)' }}>EU Conflict Minerals compliant</span>
             </Link>
-            <Link to="/contact" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
+            <Link to="/gold-dealers-in-london" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
               <div style={{ fontSize: '1.8rem', marginBottom: '8px' }}>🏛️</div>
               <strong style={{ display: 'block', fontSize: '.88rem', color: 'var(--dark)', fontWeight: 700, marginBottom: '3px' }}>London</strong>
               <span style={{ fontSize: '.73rem', color: 'var(--stone)' }}>LBMA market · OECD compliant</span>
             </Link>
-            <Link to="/contact" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
+            <Link to="/gold-dealers-in-the-usa" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
               <div style={{ fontSize: '1.8rem', marginBottom: '8px' }}>🏦</div>
               <strong style={{ display: 'block', fontSize: '.88rem', color: 'var(--dark)', fontWeight: 700, marginBottom: '3px' }}>Houston / New Jersey</strong>
               <span style={{ fontSize: '.73rem', color: 'var(--stone)' }}>US dealer network partners</span>
             </Link>
-            <Link to="/contact" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
+            <Link to="/buy-gold-in-china-online" style={{ display: 'block', padding: '20px', border: '1.5px solid var(--border)', borderRadius: 'var(--r-md)', textAlign: 'center', background: 'var(--white)' }}>
               <div style={{ fontSize: '1.8rem', marginBottom: '8px' }}>🇨🇳</div>
               <strong style={{ display: 'block', fontSize: '.88rem', color: 'var(--dark)', fontWeight: 700, marginBottom: '3px' }}>China</strong>
               <span style={{ fontSize: '.73rem', color: 'var(--stone)' }}>SGE compliant · volume buyers</span>

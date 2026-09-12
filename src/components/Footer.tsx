@@ -19,6 +19,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuoteModal }) => {
               className="gb-footer__logo"
               src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/cropped-logoz-80x61.png"
               alt="Gold Bar Suppliers Africa Ltd"
+              onError={(e) => {
+                e.currentTarget.src =
+                  "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='46' viewBox='0 0 60 46'%3E%3Cpolygon points='10,38 20,12 40,12 50,38' fill='%23C5A059' stroke='%238A6D2B' stroke-width='1.5'/%3E%3Ctext x='30' y='30' font-family='serif' font-size='10' font-weight='bold' fill='%23241A06' text-anchor='middle'%3EGBS%3C/text%3E%3C/svg%3E";
+              }}
             />
             <div className="gb-footer__tagline">Africa's Most Trusted Gold Supplier</div>
             <p className="gb-footer__brand-desc">

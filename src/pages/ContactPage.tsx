@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { SafeImage } from '../components/SafeImage';
 
 interface ContactPageProps {
   onOpenQuoteModal?: () => void;
@@ -193,9 +194,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
           <div className="info-card">
             {/* Card hero image */}
             <div className="info-card-img">
-              <img
-                src="https://goldbarsuppliers.com/wp-content/uploads/2026/06/Where-to-Buy-Gold-in-Sudan.jpeg"
+              <SafeImage
+                src="https://goldbarsuppliers.com/wp-content/uploads/2026/06/Where-to-Buy-Gold-in-Sudan.webp"
                 alt="Gold Bar Suppliers Ltd — Kajokya Street Kampala Uganda office"
+                fallbackCategory="vault"
                 loading="lazy"
               />
             </div>
@@ -309,9 +311,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
           {/* Second info image card */}
           <div style={{ borderRadius: 'var(--r-lg)', overflow: 'hidden', border: '1px solid var(--border)' }}>
             <div style={{ height: '180px', overflow: 'hidden', position: 'relative' }}>
-              <img
-                src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/gold-in-africa-.webp"
+              <SafeImage
+                src="https://goldbarsuppliers.com/wp-content/uploads/2025/10/gold-3.webp"
                 alt="Certified African gold bars for international export — Gold Bar Suppliers Ltd"
+                fallbackCategory="bars"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 loading="lazy"
               />
