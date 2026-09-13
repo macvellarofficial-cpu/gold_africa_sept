@@ -22,8 +22,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuoteModal }) => {
             <span>· Insured Worldwide Delivery</span>
           </div>
           <div className="flex items-center gap-4">
-            <a href="https://wa.me/256754681378" target="_blank" rel="noopener noreferrer">
-              WhatsApp: +256 754 681378
+            <a href="https://wa.me/256762079775" target="_blank" rel="noopener noreferrer">
+              WhatsApp: +256 762 079775
             </a>
             <a href="mailto:info@goldafric.com">info@goldafric.com</a>
           </div>

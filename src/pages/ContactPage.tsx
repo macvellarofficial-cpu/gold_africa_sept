@@ -58,7 +58,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
     <div className="contact-page-wrapper">
       <SEO
         title="Contact Gold Africa Trading Desk | Lubowa, Kampala | WhatsApp & Inquiries"
-        description="Contact the Gold Africa trading desk in Lubowa, Kampala. Phone/WhatsApp: +256 754 681378, Email: info@goldafric.com. Request live bullion pricing, schedule refinery inspections, or initiate export clearance."
+        description="Contact the Gold Africa trading desk in Lubowa, Kampala. Phone/WhatsApp: +256 762 079775, Email: info@goldafric.com. Request live bullion pricing, schedule refinery inspections, or initiate export clearance."
         canonical="/contact"
         keywords="contact gold africa, buy gold in kampala contact, gold africa whatsapp, gold suppliers kampala address, uganda gold trading desk, gold export inquiry uganda"
         schema={breadcrumbs}
@@ -207,7 +207,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
                 </p>
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '16px' }}>
                   <a
-                    href={`https://wa.me/256754681378?text=${encodeURIComponent(`Hello Gold Africa, I just submitted an inquiry for ${product} on your website. My name is ${name}.`)}`}
+                    href={`https://wa.me/256762079775?text=${encodeURIComponent(`Hello Gold Africa, I just submitted an inquiry for ${product} on your website. My name is ${name}.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ background: '#25D366', color: '#000', padding: '10px 18px', borderRadius: '6px', fontWeight: 700, fontSize: '.85rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
@@ -279,7 +279,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
                   <div>
                     <div className="contact-item-label">Phone / WhatsApp</div>
                     <div className="contact-item-value">
-                      <a href="https://wa.me/256754681378" target="_blank" rel="noopener noreferrer">+256 754 681378</a>
+                      <a href="https://wa.me/256762079775" target="_blank" rel="noopener noreferrer">+256 762 079775</a>
                     </div>
                   </div>
                 </div>
@@ -508,7 +508,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
             <div className="faq-item">
               <div className="faq-q">How long does it take to receive a response?</div>
               <p className="faq-a">
-                All enquiries submitted via the contact form or WhatsApp receive a response within 2 business hours Monday–Saturday. For urgent enquiries, WhatsApp (+256 754 681378) typically receives a faster response, often within 30 minutes during business hours.
+                All enquiries submitted via the contact form or WhatsApp receive a response within 2 business hours Monday–Saturday. For urgent enquiries, WhatsApp (+256 762 079775) typically receives a faster response, often within 30 minutes during business hours.
               </p>
             </div>
             <div className="faq-item">

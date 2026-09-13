@@ -473,12 +473,12 @@ export const BlogArticlePage: React.FC<BlogArticlePageProps> = ({ onOpenQuoteMod
                 Need urgent price indications, prompt assay verification, or physical inspection in Kampala or Johannesburg?
               </p>
               <a
-                href="https://wa.me/256754681378"
+                href="https://wa.me/256762079775"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-2.5 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded transition shadow"
               >
-                <span>💬 Chat on WhatsApp (+256 754 681378)</span>
+                <span>💬 Chat on WhatsApp (+256 762 079775)</span>
               </a>
               <div className="mt-3 text-center">
                 <Link

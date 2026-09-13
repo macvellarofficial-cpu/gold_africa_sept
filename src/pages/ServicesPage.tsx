@@ -647,8 +647,8 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal }) 
             <div className="cta-phone">
               <div className="phone-ring">📞</div>
               <div>
-                <a href="https://wa.me/256754681378" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
-                  <strong>+256 754 681378</strong>
+                <a href="https://wa.me/256762079775" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                  <strong>+256 762 079775</strong>
                 </a>
                 <small>WhatsApp & Calls · Mon–Sat 8am–6pm EAT</small>
               </div>

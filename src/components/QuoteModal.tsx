@@ -93,7 +93,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
       `Delivery: ${deliveryTerm} (${deliveryTerm === 'CIF' ? destinationAirport : 'Kampala/Entebbe Vault'})\n` +
       `Estimated Total: $${grandTotalUsd.toLocaleString(undefined, { maximumFractionDigits: 0 })} USD`
     );
-    return `https://wa.me/256754681378?text=${text}`;
+    return `https://wa.me/256762079775?text=${text}`;
   };
 
   return (

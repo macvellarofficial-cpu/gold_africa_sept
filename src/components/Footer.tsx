@@ -35,7 +35,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuoteModal }) => {
             </ul>
             <div className="gb-footer__contact">
               📍 Lubowa, Kampala, Uganda<br />
-              📞 <a href="https://wa.me/256754681378" target="_blank" rel="noopener noreferrer">WhatsApp: +256 754 681378</a><br />
+              📞 <a href="https://wa.me/256762079775" target="_blank" rel="noopener noreferrer">WhatsApp: +256 762 079775</a><br />
               ✉ <a href="mailto:info@goldafric.com">info@goldafric.com</a><br />
               ⏱ Response within 2 hours · 7 days a week
             </div>

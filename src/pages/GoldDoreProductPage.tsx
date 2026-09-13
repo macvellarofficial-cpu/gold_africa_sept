@@ -96,14 +96,14 @@ export const GoldDoreProductPage: React.FC<GoldDorePageProps> = ({ onOpenQuoteMo
                 Request Doré Bar FCO →
               </button>
               <a
-                href="https://wa.me/256754681378"
+                href="https://wa.me/256762079775"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}
               >
                 <Phone className="w-4 h-4 text-emerald-600" />
-                <span>WhatsApp: +256 754 681378</span>
+                <span>WhatsApp: +256 762 079775</span>
               </a>
             </div>
           </div>

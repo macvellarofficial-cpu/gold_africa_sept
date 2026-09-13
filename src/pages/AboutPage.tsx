@@ -620,7 +620,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
               <div>
                 <div className="cr-label">WhatsApp / Phone</div>
                 <div className="cr-val">
-                  <a href="https://wa.me/256754681378" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>+256 754 681378</a> (24/7 Available)
+                  <a href="https://wa.me/256762079775" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>+256 762 079775</a> (24/7 Available)
                 </div>
               </div>
             </div>

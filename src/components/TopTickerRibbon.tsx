@@ -40,13 +40,13 @@ export const TopTickerRibbon: React.FC = () => {
             <span>info@goldafric.com</span>
           </a>
           <a
-            href="https://wa.me/256754681378"
+            href="https://wa.me/256762079775"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 hover:text-[#E5C365] font-medium text-[#FAF7F2] transition-colors"
           >
             <Phone className="w-3.5 h-3.5 text-[#25D366]" />
-            <span>WhatsApp: +256 754 681378</span>
+            <span>WhatsApp: +256 762 079775</span>
           </a>
         </div>
       </div>

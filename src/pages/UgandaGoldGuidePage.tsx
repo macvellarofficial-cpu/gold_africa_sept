@@ -144,7 +144,7 @@ export const UgandaGoldGuidePage: React.FC<UgandaGoldGuideProps> = ({ onOpenQuot
               <span style={{ fontSize: '.72rem', textTransform: 'uppercase', color: 'var(--gold)', fontWeight: 700, display: 'block' }}>Kampala Office · Reg: 80020000702132</span>
               <strong style={{ fontSize: '.92rem', color: 'var(--dark)', display: 'block', marginTop: '4px' }}>Lubowa, Kampala, Uganda</strong>
               <div style={{ marginTop: '10px', fontSize: '.84rem' }}>
-                <a href="https://wa.me/256754681378" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--dark)', textDecoration: 'none', fontWeight: 600 }}>📞 +256 754 681378</a>
+                <a href="https://wa.me/256762079775" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--dark)', textDecoration: 'none', fontWeight: 600 }}>📞 +256 762 079775</a>
               </div>
             </div>
 

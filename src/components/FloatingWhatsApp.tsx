@@ -5,7 +5,7 @@ export const FloatingWhatsApp: React.FC = () => {
   return (
     <div className="fixed bottom-6 right-6 z-40 group">
       <a
-        href="https://wa.me/256754681378?text=Hello%20Gold%20Africa,%20I%20would%20like%20to%20inquire%20about%20purchasing%20gold%20bars."
+        href="https://wa.me/256762079775?text=Hello%20Gold%20Africa,%20I%20would%20like%20to%20inquire%20about%20purchasing%20gold%20bars."
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-3 bg-[#25D366] hover:bg-[#20ba59] text-black px-4 py-3 rounded-full shadow-2xl transition-all duration-300 transform group-hover:scale-105 active:scale-95 border-2 border-white/20"
@@ -21,7 +21,7 @@ export const FloatingWhatsApp: React.FC = () => {
       </a>
       {/* Floating Tooltip */}
       <div className="absolute bottom-full right-0 mb-2 hidden group-hover:block whitespace-nowrap bg-[#0F261D] text-[#FAF7F2] text-xs px-3 py-1.5 rounded-lg border border-[#D4AF37]/30 shadow-lg">
-        ⚡ WhatsApp: +256 754 681378 (Lubowa, Kampala)
+        ⚡ WhatsApp: +256 762 079775 (Lubowa, Kampala)
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ export const generateOrganizationSchema = () => ({
   image: 'https://www.goldafric.com/gold-africa-logo.png',
   description:
     'Gold Africa is a premier licensed African gold trading and export enterprise connecting international bullion investors, mints, and refiners with certified 24K pure gold bars, unrefined gold doré, and natural nuggets sourced directly from accredited mining concessions in Uganda and East Africa.',
-  telephone: '+256754681378',
+  telephone: '+256762079775',
   email: 'info@goldafric.com',
   address: {
     '@type': 'PostalAddress',
