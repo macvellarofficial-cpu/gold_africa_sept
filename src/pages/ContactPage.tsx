@@ -24,7 +24,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
     setIsSubmitting(true);
 
     try {
-      await fetch('https://formsubmit.co/ajax/info@buygold.blog', {
+      await fetch('https://formsubmit.co/ajax/info@goldafric.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
