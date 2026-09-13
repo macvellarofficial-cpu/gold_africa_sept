@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { SafeImage } from '../components/SafeImage';
 import { SEO } from '../components/SEO';
 import { generateBreadcrumbSchema } from '../utils/schemaGenerator';
@@ -8,7 +8,55 @@ interface ProductsPageProps {
   onOpenQuoteModal?: (productSlug?: string) => void;
 }
 
+const ROUTE_SEO: Record<string, { title: string; description: string; keywords: string; heading: string }> = {
+  '/gold-bars-for-sale': {
+    title: 'Gold Bars for Sale | Buy 24K, 22K & Investment Bullion Direct',
+    description: 'Buy certified 24K, 22K gold bars and kilobars direct from African refiners. Genuine LBMA pricing, SGS assay documentation, and insured Brinks armored shipping.',
+    keywords: 'gold bars for sale, buy gold bars africa, 24k gold bullion, investment gold bars, certified gold suppliers kampala',
+    heading: 'Gold Bars for Sale',
+  },
+  '/gold-bullion': {
+    title: 'Gold Bullion for Sale Africa | Certified Investment Grade 24K Bars',
+    description: 'Acquire certified physical gold bullion in Africa. Investment-grade 999.9 pure bars with independent laboratory assays and vault-to-vault secure logistics.',
+    keywords: 'gold bullion, buy gold bullion africa, physical gold bullion investment, lbma pure gold bars, uganda gold bullion dealers',
+    heading: 'Investment Gold Bullion',
+  },
+  '/gold-coins-in-kenya': {
+    title: 'Gold Coins in Kenya & East Africa | Investment Bullion Coins & Sovereigns',
+    description: 'Explore investment gold coins and fine bullion available across Kenya, Uganda, and East Africa. Certified pure precious metal coins with door-to-door insured delivery.',
+    keywords: 'gold coins in kenya, buy gold coins east africa, gold bullion coins nairobi kampala, investment gold coins africa',
+    heading: 'Gold Coins in Kenya & East Africa',
+  },
+  '/buy-gold-nuggets-from-africa': {
+    title: 'Buy Gold Nuggets from Africa | Natural Unrefined Mining Nuggets',
+    description: 'Source natural, high-purity African gold nuggets direct from registered mining concessions in Uganda, DRC, and East Africa. Export licenses and assays included.',
+    keywords: 'buy gold nuggets from africa, natural gold nuggets for sale, unrefined african gold nuggets, placer gold nuggets uganda',
+    heading: 'Natural African Gold Nuggets',
+  },
+  '/buy-raw-gold-dust-online': {
+    title: 'Buy Raw Gold Dust Online | Certified High-Purity African Gold',
+    description: 'Direct procurement of alluvial and raw gold dust from verified African miners. Full SGS assay verification, DGSM export clearance, and safe bank escrow.',
+    keywords: 'buy raw gold dust online, african gold dust for sale, raw gold powder direct from miners, gold dust suppliers uganda',
+    heading: 'Raw Gold Dust for Sale',
+  },
+  '/silver-bars-in-africa': {
+    title: 'Silver Bars in Africa | Certified 999 Fine Silver Bullion & Ingots',
+    description: 'Invest in 999 fine pure silver bars and commercial ingots in Africa. Insured delivery, assay verification, and competitive premiums over COMEX/LBMA spot.',
+    keywords: 'silver bars in africa, buy silver bullion uganda, investment silver bars kenya, pure silver bullion suppliers',
+    heading: 'Silver Bars & Ingots in Africa',
+  },
+};
+
 export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) => {
+  const location = useLocation();
+  const cleanPath = location.pathname.replace(/\/+$/, '') || '/products';
+  const pageSeo = ROUTE_SEO[cleanPath] || {
+    title: 'Gold Bars & Bullion for Sale | 24K, 22K & Doré Bars',
+    description: 'Browse certified 24K pure gold bars, 1kg kilobars, 22K bars, and wholesale gold doré from licensed African refineries. Live LBMA pricing, SGS assay certificates, and Brinks insured worldwide delivery.',
+    keywords: 'gold bars for sale, buy gold bars africa, 24k gold bullion, 1kg gold bar for sale, african gold dore bars, 22k gold bars, buy gold bullion online, uganda gold suppliers, buy gold in kampala',
+    heading: 'Gold Bars for Sale',
+  };
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,16 +74,16 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) 
 
   const breadcrumbs = generateBreadcrumbSchema([
     { name: 'Home', url: '/' },
-    { name: 'Gold Bars & Bullion for Sale', url: '/products' },
+    { name: pageSeo.heading, url: cleanPath },
   ]);
 
   return (
     <div className="section s-white" style={{ paddingTop: '40px', paddingBottom: '80px' }}>
       <SEO
-        title="Gold Bars & Bullion for Sale | 24K, 22K & Doré Bars"
-        description="Browse certified 24K pure gold bars, 1kg kilobars, 22K bars, and wholesale gold doré from licensed African refineries. Live LBMA pricing, SGS assay certificates, and Brinks insured worldwide delivery."
-        canonical="/products"
-        keywords="gold bars for sale, buy gold bars africa, 24k gold bullion, 1kg gold bar for sale, african gold dore bars, 22k gold bars, buy gold bullion online, uganda gold suppliers, buy gold in kampala"
+        title={pageSeo.title}
+        description={pageSeo.description}
+        canonical={cleanPath}
+        keywords={pageSeo.keywords}
         ogType="product"
         schema={breadcrumbs}
       />

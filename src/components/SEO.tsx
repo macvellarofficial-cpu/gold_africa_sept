@@ -57,8 +57,14 @@ export const SEO: React.FC<SEOProps> = ({
     setMetaTag('name', 'description', description);
     setMetaTag('name', 'keywords', keywords);
     setMetaTag('name', 'author', author);
+    setMetaTag('name', 'publisher', 'Gold Africa Company Limited');
+    setMetaTag('name', 'copyright', 'Gold Africa Company Limited');
     setMetaTag('name', 'robots', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
     setMetaTag('name', 'googlebot', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
+    setMetaTag('name', 'bingbot', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
+    setMetaTag('name', 'revisit-after', '1 days');
+    setMetaTag('name', 'rating', 'general');
+    setMetaTag('name', 'language', 'English');
 
     // Geo tags for local/regional African gold trading authority
     setMetaTag('name', 'geo.region', 'UG-102');
@@ -68,6 +74,7 @@ export const SEO: React.FC<SEOProps> = ({
 
     // 3. OpenGraph Meta Tags
     setMetaTag('property', 'og:site_name', 'Gold Africa');
+    setMetaTag('property', 'og:locale', 'en_US');
     setMetaTag('property', 'og:title', fullTitle);
     setMetaTag('property', 'og:description', description);
     setMetaTag('property', 'og:type', ogType);
@@ -78,9 +85,12 @@ export const SEO: React.FC<SEOProps> = ({
 
     // 4. Twitter Card Meta Tags
     setMetaTag('name', 'twitter:card', 'summary_large_image');
+    setMetaTag('name', 'twitter:site', '@goldafrica');
+    setMetaTag('name', 'twitter:creator', '@goldafrica');
     setMetaTag('name', 'twitter:title', fullTitle);
     setMetaTag('name', 'twitter:description', description);
     setMetaTag('name', 'twitter:image', ogImage);
+    setMetaTag('name', 'twitter:image:alt', `${fullTitle} - Gold Africa`);
 
     // 5. Canonical Link
     let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;

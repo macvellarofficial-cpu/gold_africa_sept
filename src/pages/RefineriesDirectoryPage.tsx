@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Phone, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { generateBreadcrumbSchema } from '../utils/schemaGenerator';
@@ -8,7 +8,31 @@ interface RefineriesDirectoryPageProps {
   onOpenQuoteModal: (productSlug?: string) => void;
 }
 
+const REFINERY_SEO: Record<string, { title: string; description: string; keywords: string; heading: string }> = {
+  '/gold-refineries-in-uganda': {
+    title: 'Gold Refineries in Uganda | Licensed Assayers & Smelters Directory 2026',
+    description: 'Official 2026 directory of accredited gold refineries in Uganda. Complete guide to refining facilities, assay verification, DGSM licensing, and export documentation.',
+    keywords: 'gold refineries in uganda, list of gold refineries in uganda, uganda gold refinery directory, licensed gold smelters kampala, gold assay laboratories uganda',
+    heading: 'Gold Refineries in Uganda (Directory)',
+  },
+  '/list-of-gold-refineries-in-uganda': {
+    title: 'List of Gold Refineries in Uganda | Accredited Assay Labs & Facilities',
+    description: 'Full list of licensed and accredited gold refining operations in Kampala and Entebbe, Uganda. Compare capacities, assay certifications, and compliance standards.',
+    keywords: 'list of gold refineries in uganda, gold refineries in uganda, accredited gold refineries kampala, agr uganda, simba gold refinery, uganda refinery list',
+    heading: 'List of Gold Refineries in Uganda',
+  },
+};
+
 export const RefineriesDirectoryPage: React.FC<RefineriesDirectoryPageProps> = ({ onOpenQuoteModal }) => {
+  const location = useLocation();
+  const cleanPath = location.pathname.replace(/\/+$/, '') || '/african-gold-refinery';
+  const pageSeo = REFINERY_SEO[cleanPath] || {
+    title: 'Licensed Gold Refineries in Uganda | 2026 Directory & Guide',
+    description: 'Comprehensive guide to accredited gold refineries in Uganda and East Africa including African Gold Refinery (AGR Entebbe), Simba Gold, and Victoria Gold Star. Refining capacity, assay labs, and licensing details.',
+    keywords: 'african gold refinery, gold refineries in uganda, list of gold refineries in uganda, entebbe gold refinery, gold assay lab kampala, agr uganda, refined gold uganda',
+    heading: 'African Gold Refinery Uganda',
+  };
+
   const [inquiryName, setInquiryName] = useState('');
   const [inquiryEmail, setInquiryEmail] = useState('');
   const [inquiryMessage, setInquiryMessage] = useState('');
@@ -22,16 +46,16 @@ export const RefineriesDirectoryPage: React.FC<RefineriesDirectoryPageProps> = (
 
   const breadcrumbs = generateBreadcrumbSchema([
     { name: 'Home', url: '/' },
-    { name: 'African Gold Refinery Uganda', url: '/african-gold-refinery' },
+    { name: pageSeo.heading, url: cleanPath },
   ]);
 
   return (
     <div className="section s-white" style={{ paddingTop: '40px', paddingBottom: '80px' }}>
       <SEO
-        title="Licensed Gold Refineries in Uganda | 2026 Directory & Guide"
-        description="Comprehensive guide to accredited gold refineries in Uganda and East Africa including African Gold Refinery (AGR Entebbe), Simba Gold, and Victoria Gold Star. Refining capacity, assay labs, and licensing details."
-        canonical="/african-gold-refinery"
-        keywords="african gold refinery, gold refineries in uganda, list of gold refineries in uganda, entebbe gold refinery, gold assay lab kampala, agr uganda, refined gold uganda"
+        title={pageSeo.title}
+        description={pageSeo.description}
+        canonical={cleanPath}
+        keywords={pageSeo.keywords}
         ogType="article"
         schema={breadcrumbs}
       />
@@ -40,7 +64,7 @@ export const RefineriesDirectoryPage: React.FC<RefineriesDirectoryPageProps> = (
         <div style={{ fontSize: '.82rem', color: 'var(--stone)', marginBottom: '24px' }}>
           <Link to="/" style={{ color: 'var(--gold)', textDecoration: 'none' }}>Home</Link>
           {' '}&rsaquo;{' '}
-          <span>African Gold Refinery (AGR Uganda)</span>
+          <span>{pageSeo.heading}</span>
         </div>
 
         <div className="content-sidebar-layout">

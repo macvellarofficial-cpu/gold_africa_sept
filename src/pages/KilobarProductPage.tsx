@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Award, ShieldCheck, CheckCircle2, ArrowRight, Phone, Calculator, Lock } from 'lucide-react';
 import { LIVE_SPOT_DATA, PRODUCTS } from '../data/goldData';
 import { SafeImage } from '../components/SafeImage';
@@ -10,7 +10,49 @@ interface KilobarPageProps {
   onOpenQuoteModal: (productSlug?: string) => void;
 }
 
+const KILOBAR_SEO: Record<string, { title: string; description: string; keywords: string; heading: string }> = {
+  '/24k-gold-bars-for-sale-africa': {
+    title: '24K Gold Bars for Sale in Africa | 999.9 Pure Investment Bullion',
+    description: 'Buy certified 24-karat pure 999.9 fine gold bars directly from licensed African refiners. Live spot pricing, XRF spectrometer assay confirmation, and Brinks worldwide delivery.',
+    keywords: '24k gold bars for sale africa, 999.9 pure gold bars, buy 24k gold in uganda, african 24k bullion dealer, pure gold bars kampala',
+    heading: '24K Pure Gold Bars for Sale',
+  },
+  '/22k-gold-for-sale': {
+    title: '22K Gold Bars & Bullion for Sale | Certified Jewelry Grade 916 Gold',
+    description: 'Wholesale 22-karat (916 fineness) certified gold bars direct from African refineries. Ideal for jewelers, mints, and international commercial precious metal buyers.',
+    keywords: '22k gold for sale, buy 22k gold bars, 916 gold bars africa, wholesale 22k gold jewelry grade, 22k gold suppliers uganda',
+    heading: '22K Commercial Gold Bars',
+  },
+  '/1-oz-gold-bar-for-sale': {
+    title: '1 oz Gold Bar for Sale | Certified 31.103g 24K Pure Bullion',
+    description: 'Purchase 1 troy ounce (31.1g) 24K pure gold bars direct from Africa. Sealed tamper-evident assay packaging, serial numbering, and global insured dispatch.',
+    keywords: '1 oz gold bar for sale, 1 ounce gold bar price, buy 1oz gold bar africa, 1 oz bullion bar, 1 troy ounce gold bar uganda',
+    heading: '1 oz Gold Bars (31.1g)',
+  },
+  '/50-grams-gold-bar-for-sale': {
+    title: '50 Grams Gold Bar for Sale | 24K Investment Bullion Ingot',
+    description: 'Certified 50g 24K pure gold bars (999.9 fine). Individually numbered with refinery assay certificate, secure vaulting, and insured international shipping.',
+    keywords: '50 grams gold bar for sale, 50g gold bar price, buy 50 gram gold bar, 50g 24k gold bullion africa, 50 gram pure gold bar',
+    heading: '50 Grams 24K Gold Bar',
+  },
+  '/1kg-gold-bar-price-in-south-africa': {
+    title: '1kg Gold Bar Price in South Africa Today | 2026 Updated Rates',
+    description: 'Live 1kg gold bar prices in South Africa (ZAR and USD). Compare Rand Refinery rates with direct East African bullion sourcing, tax rules, and export procedures.',
+    keywords: '1kg gold bar price in south africa, buy gold in south africa, rand refinery gold price, 1kg kilobar price zar, gold bullion south africa 2026',
+    heading: '1kg Gold Bar Price in South Africa',
+  },
+};
+
 export const KilobarProductPage: React.FC<KilobarPageProps> = ({ onOpenQuoteModal }) => {
+  const location = useLocation();
+  const cleanPath = location.pathname.replace(/\/+$/, '') || '/1kg-gold-bars-for-sale';
+  const pageSeo = KILOBAR_SEO[cleanPath] || {
+    title: '1kg Gold Bar (Kilobar) for Sale | 24K 999.9 Fine Gold',
+    description: 'Buy investment-grade 1 Kilogram (1000g) 24K pure gold bars direct from African refiners. Lowest markup over LBMA spot, accredited SGS/Bureau Veritas assay certificates, and Brinks insured delivery.',
+    keywords: '1kg gold bar for sale, buy kilobar gold, 24k 1kg gold bar price, buy 1kg gold bar in africa, 1kg gold bar price in south africa, investment gold bars africa, lbma kilobars kampala',
+    heading: '1kg Gold Bar (Kilobar)',
+  };
+
   const [allocationKg, setAllocationKg] = useState<number>(5);
   const [buyerName, setBuyerName] = useState('');
   const [buyerEmail, setBuyerEmail] = useState('');
@@ -41,7 +83,7 @@ export const KilobarProductPage: React.FC<KilobarPageProps> = ({ onOpenQuoteModa
       generateBreadcrumbSchema([
         { name: 'Home', url: '/' },
         { name: 'Gold Bars for Sale', url: '/gold-bars-for-sale' },
-        { name: '1kg Gold Bar (Kilobar)', url: '/1kg-gold-bars-for-sale' },
+        { name: pageSeo.heading, url: cleanPath },
       ]),
     ],
   };
@@ -49,10 +91,10 @@ export const KilobarProductPage: React.FC<KilobarPageProps> = ({ onOpenQuoteModa
   return (
     <div className="section s-white" style={{ paddingTop: '40px', paddingBottom: '80px' }}>
       <SEO
-        title="1kg Gold Bar (Kilobar) for Sale | 24K 999.9 Fine Gold"
-        description="Buy investment-grade 1 Kilogram (1000g) 24K pure gold bars direct from African refiners. Lowest markup over LBMA spot, accredited SGS/Bureau Veritas assay certificates, and Brinks insured delivery."
-        canonical="/1kg-gold-bars-for-sale"
-        keywords="1kg gold bar for sale, buy kilobar gold, 24k 1kg gold bar price, buy 1kg gold bar in africa, 1kg gold bar price in south africa, investment gold bars africa, lbma kilobars kampala"
+        title={pageSeo.title}
+        description={pageSeo.description}
+        canonical={cleanPath}
+        keywords={pageSeo.keywords}
         ogType="product"
         ogImage={kilobarProd.image}
         schema={kilobarSchema}

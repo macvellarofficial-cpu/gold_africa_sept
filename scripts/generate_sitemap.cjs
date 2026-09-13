@@ -12,6 +12,7 @@ const corePages = [
   { path: 'gold-bullion', priority: '0.9', changefreq: 'daily' },
   { path: '1kg-gold-bars-for-sale', priority: '0.9', changefreq: 'daily' },
   { path: 'product/1kg-gold-bar', priority: '0.9', changefreq: 'daily' },
+  { path: '1kg-gold-bar-price-in-south-africa', priority: '0.9', changefreq: 'daily' },
   { path: 'gold-dore-bars-for-sale', priority: '0.9', changefreq: 'daily' },
   { path: 'product/gold-dore-bars', priority: '0.9', changefreq: 'daily' },
   { path: '24k-gold-bars-for-sale-africa', priority: '0.9', changefreq: 'daily' },
@@ -47,6 +48,26 @@ corePages.forEach((p) => {
   const loc = cleanPath === '' ? `${DOMAIN}/` : `${DOMAIN}/${cleanPath}`;
   urlMap.set(loc, { loc, priority: p.priority, changefreq: p.changefreq, lastmod: TODAY });
 });
+
+// Load internal article slugs from articlesData.ts
+try {
+  const articlesFile = path.resolve(__dirname, '../src/data/articlesData.ts');
+  if (fs.existsSync(articlesFile)) {
+    const content = fs.readFileSync(articlesFile, 'utf-8');
+    const slugMatches = [...content.matchAll(/slug:\s*['"]([^'"]+)['"]/g)].map((m) => m[1]);
+    slugMatches.forEach((slug) => {
+      const cleanSlug = slug.replace(/^\/+|\/+$/g, '');
+      if (cleanSlug) {
+        const loc = `${DOMAIN}/${cleanSlug}`;
+        if (!urlMap.has(loc)) {
+          urlMap.set(loc, { loc, priority: '0.8', changefreq: 'weekly', lastmod: TODAY });
+        }
+      }
+    });
+  }
+} catch (e) {
+  console.error('Error loading articlesData.ts for sitemap:', e);
+}
 
 // Load all external target URLs
 try {
