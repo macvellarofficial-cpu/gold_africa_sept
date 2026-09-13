@@ -38,7 +38,7 @@ export const BlogArticlePage: React.FC<BlogArticlePageProps> = ({ onOpenQuoteMod
 
     setIsSubmitting(true);
     try {
-      await fetch('https://formsubmit.co/ajax/info@goldafric.com', {
+      await fetch('https://formsubmit.co/ajax/info@buygold.blog', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

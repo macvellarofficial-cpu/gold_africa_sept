@@ -53,7 +53,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
     setScoReference(refNum);
 
     try {
-      await fetch('https://formsubmit.co/ajax/info@goldafric.com', {
+      await fetch('https://formsubmit.co/ajax/info@buygold.blog', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -24,7 +24,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
     setIsSubmitting(true);
 
     try {
-      await fetch('https://formsubmit.co/ajax/info@goldafric.com', {
+      await fetch('https://formsubmit.co/ajax/info@buygold.blog', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -36,13 +36,17 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenQuoteModal }) =>
           phone,
           country,
           product,
-          weight,
-          message,
+          weight: weight || 'Not specified',
+          message: message || 'Inquiry submitted from Contact Page form',
+          _subject: `🔔 [Gold Africa] New Inquiry: ${name} (${product})`,
+          _template: 'table',
+          _captcha: 'false',
           timestamp: new Date().toISOString()
         })
       });
       setSubmitted(true);
     } catch (err) {
+      console.warn('Contact form submit error:', err);
       setSubmitted(true);
     } finally {
       setIsSubmitting(false);
